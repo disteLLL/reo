@@ -1,0 +1,1052 @@
+<https://www.w3id.org/def/reo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.w3id.org/def/reo> <http://purl.org/dc/elements/1.1/creator> "Tim Fock" .
+<https://www.w3id.org/def/reo> <http://purl.org/dc/terms/licence> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://www.w3id.org/def/reo> <http://purl.org/dc/terms/title> "Real Estate Ontology" .
+<https://www.w3id.org/def/reo> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." .
+<https://www.w3id.org/def/reo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/licence
+<http://purl.org/dc/terms/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://www.w3id.org/def/reo#address
+<https://www.w3id.org/def/reo#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#address> <http://www.w3.org/2000/01/rdf-schema#label> "Adresse"@de .
+# 
+# https://www.w3id.org/def/reo#apartmentType
+<https://www.w3id.org/def/reo#apartmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#apartmentType> <http://www.w3.org/2000/01/rdf-schema#label> "Apartmenttyp"@de .
+# 
+# https://www.w3id.org/def/reo#cat
+<https://www.w3id.org/def/reo#cat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#cat> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#cat> <http://www.w3.org/2000/01/rdf-schema#label> "Katze"@de .
+# 
+# https://www.w3id.org/def/reo#commercialUse
+<https://www.w3id.org/def/reo#commercialUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#commercialUse> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#commercialUse> <http://www.w3.org/2000/01/rdf-schema#label> "kommerzielle Nutzung"@de .
+# 
+# https://www.w3id.org/def/reo#condition
+<https://www.w3id.org/def/reo#condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#condition> <http://www.w3.org/2000/01/rdf-schema#label> "Zustand"@de .
+# 
+# https://www.w3id.org/def/reo#dog
+<https://www.w3id.org/def/reo#dog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#dog> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#dog> <http://www.w3.org/2000/01/rdf-schema#label> "Hund"@de .
+# 
+# https://www.w3id.org/def/reo#energyCarrier
+<https://www.w3id.org/def/reo#energyCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#energyCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Energieträger"@de .
+# 
+# https://www.w3id.org/def/reo#energyEfficiencyClass
+<https://www.w3id.org/def/reo#energyEfficiencyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#energyEfficiencyClass> <http://www.w3.org/2000/01/rdf-schema#label> "Energieeffizienzklasse"@de .
+# 
+# https://www.w3id.org/def/reo#energyPass
+<https://www.w3id.org/def/reo#energyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#energyPass> <http://www.w3.org/2000/01/rdf-schema#label> "Energieausweis"@de .
+# 
+# https://www.w3id.org/def/reo#energypassType
+<https://www.w3id.org/def/reo#energypassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#energypassType> <http://www.w3.org/2000/01/rdf-schema#label> "Energieausweistyp"@de .
+# 
+# https://www.w3id.org/def/reo#equipmentCondition
+<https://www.w3id.org/def/reo#equipmentCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#equipmentCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Zustand der Inneneinrichtung"@de .
+# 
+# https://www.w3id.org/def/reo#heatingType
+<https://www.w3id.org/def/reo#heatingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#heatingType> <http://www.w3.org/2000/01/rdf-schema#label> "Heizungstyp"@de .
+# 
+# https://www.w3id.org/def/reo#livingCommunity
+<https://www.w3id.org/def/reo#livingCommunity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#livingCommunity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#livingCommunity> <http://www.w3.org/2000/01/rdf-schema#label> "Wohngemeinschaft"@de .
+# 
+# https://www.w3id.org/def/reo#marketingType
+<https://www.w3id.org/def/reo#marketingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#marketingType> <http://www.w3.org/2000/01/rdf-schema#label> "Vermarktungsart"@de .
+# 
+# https://www.w3id.org/def/reo#otherPet
+<https://www.w3id.org/def/reo#otherPet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#otherPet> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#otherPet> <http://www.w3.org/2000/01/rdf-schema#label> "anderes Haustier"@de .
+# 
+# https://www.w3id.org/def/reo#realEstateType
+<https://www.w3id.org/def/reo#realEstateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#realEstateType> <http://www.w3.org/2000/01/rdf-schema#label> "Immobilientyp"@de .
+# 
+# https://www.w3id.org/def/reo#smoking
+<https://www.w3id.org/def/reo#smoking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#smoking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#tenantGuidelines> .
+<https://www.w3id.org/def/reo#smoking> <http://www.w3.org/2000/01/rdf-schema#label> "Rauchen"@de .
+# 
+# https://www.w3id.org/def/reo#tenantGuidelines
+<https://www.w3id.org/def/reo#tenantGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#tenantGuidelines> <http://www.w3.org/2000/01/rdf-schema#label> "Richtlinien für Mieter" .
+# 
+# https://www.w3id.org/def/reo#usageType
+<https://www.w3id.org/def/reo#usageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.w3id.org/def/reo#usageType> <http://www.w3.org/2000/01/rdf-schema#label> "Nutzungsart"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://www.w3id.org/def/reo#additionalCost
+<https://www.w3id.org/def/reo#additionalCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#additionalCost> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#additionalCost> <http://www.w3.org/2000/01/rdf-schema#label> "Nebenkosten"@de .
+# 
+# https://www.w3id.org/def/reo#bail
+<https://www.w3id.org/def/reo#bail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#bail> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#bail> <http://www.w3.org/2000/01/rdf-schema#label> "Kaution"@de .
+# 
+# https://www.w3id.org/def/reo#carspaceCost
+<https://www.w3id.org/def/reo#carspaceCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#carspaceCost> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#carspaceCost> <http://www.w3.org/2000/01/rdf-schema#label> "Kosten für Stellplatz"@de .
+# 
+# https://www.w3id.org/def/reo#city
+<https://www.w3id.org/def/reo#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#city> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#city> <http://www.w3.org/2000/01/rdf-schema#label> "Stadt"@de .
+# 
+# https://www.w3id.org/def/reo#constructionYear
+<https://www.w3id.org/def/reo#constructionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#constructionYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#year> .
+<https://www.w3id.org/def/reo#constructionYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#constructionYear> <http://www.w3.org/2000/01/rdf-schema#label> "Baujahr"@de .
+# 
+# https://www.w3id.org/def/reo#cost
+<https://www.w3id.org/def/reo#cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#cost> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#cost> <http://www.w3.org/2000/01/rdf-schema#label> "Kosten"@de .
+# 
+# https://www.w3id.org/def/reo#countryCode
+<https://www.w3id.org/def/reo#countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#countryCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#countryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#countryCode> <http://www.w3.org/2000/01/rdf-schema#label> "Ländercode"@de .
+# 
+# https://www.w3id.org/def/reo#floor
+<https://www.w3id.org/def/reo#floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#floor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#floor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#floor> <http://www.w3.org/2000/01/rdf-schema#label> "Stockwerk"@de .
+# 
+# https://www.w3id.org/def/reo#floorCount
+<https://www.w3id.org/def/reo#floorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#floorCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#floorCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#floorCount> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Stockwerke"@de .
+# 
+# https://www.w3id.org/def/reo#hasCellar
+<https://www.w3id.org/def/reo#hasCellar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#hasCellar> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#hasCellar> <http://www.w3.org/2000/01/rdf-schema#label> "hat Keller"@de .
+# 
+# https://www.w3id.org/def/reo#hasFittedKitchen
+<https://www.w3id.org/def/reo#hasFittedKitchen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#hasFittedKitchen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#hasFittedKitchen> <http://www.w3.org/2000/01/rdf-schema#label> "hat Einbauküche"@de .
+# 
+# https://www.w3id.org/def/reo#hasGarden
+<https://www.w3id.org/def/reo#hasGarden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#hasGarden> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#hasGarden> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#hasGarden> <http://www.w3.org/2000/01/rdf-schema#label> "hat Garten"@de .
+# 
+# https://www.w3id.org/def/reo#hasWashingMachineConnection
+<https://www.w3id.org/def/reo#hasWashingMachineConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#hasWashingMachineConnection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#hasWashingMachineConnection> <http://www.w3.org/2000/01/rdf-schema#label> "hat Waschmaschinenanschluss"@de .
+# 
+# https://www.w3id.org/def/reo#heatingCost
+<https://www.w3id.org/def/reo#heatingCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#heatingCost> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#heatingCost> <http://www.w3.org/2000/01/rdf-schema#label> "Heizkosten"@de .
+# 
+# https://www.w3id.org/def/reo#houseNumber
+<https://www.w3id.org/def/reo#houseNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#houseNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#houseNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#houseNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Hausnummer"@de .
+# 
+# https://www.w3id.org/def/reo#livingSpace
+<https://www.w3id.org/def/reo#livingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#livingSpace> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#livingSpace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#livingSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Wohnfläche"@de .
+# 
+# https://www.w3id.org/def/reo#maxHouseholdPersons
+<https://www.w3id.org/def/reo#maxHouseholdPersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#maxHouseholdPersons> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#maxHouseholdPersons> <http://www.w3.org/2000/01/rdf-schema#label> "maximale Anzahl der Personen im Haushalt"@de .
+# 
+# https://www.w3id.org/def/reo#modernizationYear
+<https://www.w3id.org/def/reo#modernizationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#modernizationYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#year> .
+<https://www.w3id.org/def/reo#modernizationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#modernizationYear> <http://www.w3.org/2000/01/rdf-schema#label> "Jahr der Modernisierung"@de .
+# 
+# https://www.w3id.org/def/reo#netRent
+<https://www.w3id.org/def/reo#netRent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#netRent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#netRent> <http://www.w3.org/2000/01/rdf-schema#label> "Nettokaltmiete"@de .
+# 
+# https://www.w3id.org/def/reo#numberOf
+<https://www.w3id.org/def/reo#numberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#numberOf> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl"@de .
+# 
+# https://www.w3id.org/def/reo#numberOfBathrooms
+<https://www.w3id.org/def/reo#numberOfBathrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#numberOfBathrooms> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#numberOfRooms> .
+<https://www.w3id.org/def/reo#numberOfBathrooms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#numberOfBathrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Badezimmer"@de .
+# 
+# https://www.w3id.org/def/reo#numberOfBedrooms
+<https://www.w3id.org/def/reo#numberOfBedrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#numberOfBedrooms> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#numberOfRooms> .
+<https://www.w3id.org/def/reo#numberOfBedrooms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#numberOfBedrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Schlafzimmer"@de .
+# 
+# https://www.w3id.org/def/reo#numberOfCarSpaces
+<https://www.w3id.org/def/reo#numberOfCarSpaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#numberOfCarSpaces> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#numberOf> .
+<https://www.w3id.org/def/reo#numberOfCarSpaces> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#numberOfCarSpaces> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Stellplätze"@de .
+# 
+# https://www.w3id.org/def/reo#numberOfRooms
+<https://www.w3id.org/def/reo#numberOfRooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#numberOfRooms> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#numberOf> .
+<https://www.w3id.org/def/reo#numberOfRooms> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#numberOfRooms> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl der Zimmer"@de .
+# 
+# https://www.w3id.org/def/reo#purchasePrice
+<https://www.w3id.org/def/reo#purchasePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#purchasePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://www.w3id.org/def/reo#cost> .
+<https://www.w3id.org/def/reo#purchasePrice> <http://www.w3.org/2000/01/rdf-schema#label> "Kaufpreis"@de .
+# 
+# https://www.w3id.org/def/reo#street
+<https://www.w3id.org/def/reo#street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#street> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#street> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#street> <http://www.w3.org/2000/01/rdf-schema#label> "Straße"@de .
+# 
+# https://www.w3id.org/def/reo#title
+<https://www.w3id.org/def/reo#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#title> <http://www.w3.org/2000/01/rdf-schema#label> "Titel"@de .
+# 
+# https://www.w3id.org/def/reo#year
+<https://www.w3id.org/def/reo#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#year> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#year> <http://www.w3.org/2000/01/rdf-schema#label> "Jahr"@de .
+# 
+# https://www.w3id.org/def/reo#zipCode
+<https://www.w3id.org/def/reo#zipCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://www.w3id.org/def/reo#zipCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://www.w3id.org/def/reo#zipCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#zipCode> <http://www.w3.org/2000/01/rdf-schema#label> "Postleitzahl"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://www.w3id.org/def/reo#AbstractFeature
+<https://www.w3id.org/def/reo#AbstractFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#AbstractFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Feature> .
+<https://www.w3id.org/def/reo#AbstractFeature> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/def/reo#PhysicalFeature> .
+<https://www.w3id.org/def/reo#AbstractFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Abstrakte Eigenschaft"@de .
+# 
+# https://www.w3id.org/def/reo#Address
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#city> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#countryCode> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#houseNumber> .
+_:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#street> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#zipCode> .
+_:genid5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Adresse"@de .
+# 
+# https://www.w3id.org/def/reo#ApartmentType
+<https://www.w3id.org/def/reo#ApartmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#ApartmentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#ApartmentType> <http://www.w3.org/2000/01/rdf-schema#label> "Wohnungstyp"@de .
+# 
+# https://www.w3id.org/def/reo#CarSpace
+<https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#PhysicalFeature> .
+<https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Stellplatz"@de .
+# 
+# https://www.w3id.org/def/reo#CaretakerContact
+<https://www.w3id.org/def/reo#CaretakerContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#CaretakerContact> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#CaretakerContact> <http://www.w3.org/2000/01/rdf-schema#label> "Ansprechpartner"@de .
+# 
+# https://www.w3id.org/def/reo#Condition
+<https://www.w3id.org/def/reo#Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Zustand"@de .
+# 
+# https://www.w3id.org/def/reo#EnergyCarrier
+<https://www.w3id.org/def/reo#EnergyCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#EnergyCarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#EnergyCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Energieträger"@de .
+# 
+# https://www.w3id.org/def/reo#EnergyEfficiencyClass
+<https://www.w3id.org/def/reo#EnergyEfficiencyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#EnergyEfficiencyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#EnergyEfficiencyClass> <http://www.w3.org/2000/01/rdf-schema#label> "Energieeffizienz"@de .
+# 
+# https://www.w3id.org/def/reo#EnergyPass
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#energyCarrier> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#heatingType> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#energyEfficiencyClass> .
+_:genid8 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#energypassType> .
+_:genid9 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#EnergyPassType> .
+<https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#label> "Energieausweis"@de .
+# 
+# https://www.w3id.org/def/reo#EnergyPassType
+<https://www.w3id.org/def/reo#EnergyPassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#EnergyPassType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#EnergyPassType> <http://www.w3.org/2000/01/rdf-schema#label> "Energieausweistyp"@de .
+# 
+# https://www.w3id.org/def/reo#EquipmentCondition
+<https://www.w3id.org/def/reo#EquipmentCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#EquipmentCondition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#EquipmentCondition> <http://www.w3.org/2000/01/rdf-schema#label> "Zustand der Inneneinrichtung"@de .
+# 
+# https://www.w3id.org/def/reo#Feature
+<https://www.w3id.org/def/reo#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Eigenschaft"@de .
+# 
+# https://www.w3id.org/def/reo#HeatingType
+<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/2000/01/rdf-schema#label> "Heizungstyp"@de .
+# 
+# https://www.w3id.org/def/reo#MarketingType
+<https://www.w3id.org/def/reo#MarketingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#MarketingType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#MarketingType> <http://www.w3.org/2000/01/rdf-schema#label> "Vermarktungsart"@de .
+# 
+# https://www.w3id.org/def/reo#PhysicalFeature
+<https://www.w3id.org/def/reo#PhysicalFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#PhysicalFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Feature> .
+<https://www.w3id.org/def/reo#PhysicalFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Physische Eigenschaft"@de .
+# 
+# https://www.w3id.org/def/reo#RealEstate
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#netRent> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#purchasePrice> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#tenantGuidelines> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/def/reo#TenantGuidelines> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#address> .
+_:genid16 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#Address> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#apartmentType> .
+_:genid17 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#marketingType> .
+_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#MarketingType> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#realEstateType> .
+_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#RealEstateType> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#usageType> .
+_:genid20 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#UsageType> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#energyPass> .
+_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#EnergyPass> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#livingSpace> .
+_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#title> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#additionalCost> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#bail> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#carspaceCost> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#constructionYear> .
+_:genid27 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#floor> .
+_:genid28 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid28 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#floorCount> .
+_:genid29 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid29 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#hasCellar> .
+_:genid30 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#hasFittedKitchen> .
+_:genid31 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid31 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#hasGarden> .
+_:genid32 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#hasWashingMachineConnection> .
+_:genid33 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid33 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#heatingCost> .
+_:genid34 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid34 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#double> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#maxHouseholdPersons> .
+_:genid35 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid35 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#modernizationYear> .
+_:genid36 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#int> .
+<https://www.w3id.org/def/reo#RealEstate> <http://www.w3.org/2000/01/rdf-schema#label> "Immobilie"@de .
+# 
+# https://www.w3id.org/def/reo#RealEstateType
+<https://www.w3id.org/def/reo#RealEstateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#RealEstateType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#RealEstateType> <http://www.w3.org/2000/01/rdf-schema#label> "Immobilientyp"@de .
+# 
+# https://www.w3id.org/def/reo#TenantGuidelines
+<https://www.w3id.org/def/reo#TenantGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#TenantGuidelines> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#AbstractFeature> .
+<https://www.w3id.org/def/reo#TenantGuidelines> <http://www.w3.org/2000/01/rdf-schema#label> "Richtlinien für Mieter"@de .
+# 
+# https://www.w3id.org/def/reo#Type
+<https://www.w3id.org/def/reo#Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#Type> <http://www.w3.org/2000/01/rdf-schema#label> "Fixe Werte"@de .
+# 
+# https://www.w3id.org/def/reo#UsageType
+<https://www.w3id.org/def/reo#UsageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#UsageType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#UsageType> <http://www.w3.org/2000/01/rdf-schema#label> "Nutzungsart"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://www.w3id.org/def/reo#A
+<https://www.w3id.org/def/reo#A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#A> <http://www.w3.org/2000/01/rdf-schema#label> "A"@de .
+# 
+# https://www.w3id.org/def/reo#AGREEMENT
+<https://www.w3id.org/def/reo#AGREEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#AGREEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#TenantGuidelines> .
+<https://www.w3id.org/def/reo#AGREEMENT> <http://www.w3.org/2000/01/rdf-schema#label> "nach Vereinbarung"@de .
+# 
+# https://www.w3id.org/def/reo#ALLOWED
+<https://www.w3id.org/def/reo#ALLOWED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ALLOWED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#TenantGuidelines> .
+<https://www.w3id.org/def/reo#ALLOWED> <http://www.w3.org/2000/01/rdf-schema#label> "erlaubt"@de .
+# 
+# https://www.w3id.org/def/reo#ALTERNATIVE
+<https://www.w3id.org/def/reo#ALTERNATIVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ALTERNATIVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#ALTERNATIVE> <http://www.w3.org/2000/01/rdf-schema#label> "Alternativ"@de .
+# 
+# https://www.w3id.org/def/reo#APARTMENT
+<https://www.w3id.org/def/reo#APARTMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#APARTMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#APARTMENT> <http://www.w3.org/2000/01/rdf-schema#label> "Wohnung"@de .
+# 
+# https://www.w3id.org/def/reo#ASAGREED
+<https://www.w3id.org/def/reo#ASAGREED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ASAGREED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#ASAGREED> <http://www.w3.org/2000/01/rdf-schema#label> "nach Vereinbarung"@de .
+# 
+# https://www.w3id.org/def/reo#A_PLUS
+<https://www.w3id.org/def/reo#A_PLUS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#A_PLUS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#A_PLUS> <http://www.w3.org/2000/01/rdf-schema#label> "A+"@de .
+# 
+# https://www.w3id.org/def/reo#B
+<https://www.w3id.org/def/reo#B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#B> <http://www.w3.org/2000/01/rdf-schema#label> "B"@de .
+# 
+# https://www.w3id.org/def/reo#C
+<https://www.w3id.org/def/reo#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#C> <http://www.w3.org/2000/01/rdf-schema#label> "C"@de .
+# 
+# https://www.w3id.org/def/reo#CARBON
+<https://www.w3id.org/def/reo#CARBON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CARBON> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#CARBON> <http://www.w3.org/2000/01/rdf-schema#label> "Kohle"@de .
+# 
+# https://www.w3id.org/def/reo#CARETAKER
+<https://www.w3id.org/def/reo#CARETAKER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CARETAKER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CaretakerContact> .
+<https://www.w3id.org/def/reo#CARETAKER> <http://www.w3.org/2000/01/rdf-schema#label> "Hausmeister"@de .
+# 
+# https://www.w3id.org/def/reo#CARPARK
+<https://www.w3id.org/def/reo#CARPARK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CARPARK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#CARPARK> <http://www.w3.org/2000/01/rdf-schema#label> "Parkhaus"@de .
+# 
+# https://www.w3id.org/def/reo#CARPORT
+<https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/2000/01/rdf-schema#label> "Carport"@de .
+# 
+# https://www.w3id.org/def/reo#CENTRAL
+<https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/2000/01/rdf-schema#label> "Zentralheizung"@de .
+# 
+# https://www.w3id.org/def/reo#COGENERATIONUNIT
+<https://www.w3id.org/def/reo#COGENERATIONUNIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#COGENERATIONUNIT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#COGENERATIONUNIT> <http://www.w3.org/2000/01/rdf-schema#label> "Blockheizkraftwerk"@de .
+# 
+# https://www.w3id.org/def/reo#COMPANY
+<https://www.w3id.org/def/reo#COMPANY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#COMPANY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CaretakerContact> .
+<https://www.w3id.org/def/reo#COMPANY> <http://www.w3.org/2000/01/rdf-schema#label> "Firma"@de .
+# 
+# https://www.w3id.org/def/reo#CONSUMPTION
+<https://www.w3id.org/def/reo#CONSUMPTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CONSUMPTION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyPassType> .
+<https://www.w3id.org/def/reo#CONSUMPTION> <http://www.w3.org/2000/01/rdf-schema#label> "Verbrauchsausweis"@de .
+# 
+# https://www.w3id.org/def/reo#CORED
+<https://www.w3id.org/def/reo#CORED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CORED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#CORED> <http://www.w3.org/2000/01/rdf-schema#label> "entkernt"@de .
+# 
+# https://www.w3id.org/def/reo#D
+<https://www.w3id.org/def/reo#D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#D> <http://www.w3.org/2000/01/rdf-schema#label> "D"@de .
+# 
+# https://www.w3id.org/def/reo#DEMAND
+<https://www.w3id.org/def/reo#DEMAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DEMAND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyPassType> .
+<https://www.w3id.org/def/reo#DEMAND> <http://www.w3.org/2000/01/rdf-schema#label> "Bedarfsausweis"@de .
+# 
+# https://www.w3id.org/def/reo#DEMOLITION
+<https://www.w3id.org/def/reo#DEMOLITION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DEMOLITION> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#DEMOLITION> <http://www.w3.org/2000/01/rdf-schema#label> "Abrissobjekt"@de .
+# 
+# https://www.w3id.org/def/reo#DERELICT
+<https://www.w3id.org/def/reo#DERELICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DERELICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#DERELICT> <http://www.w3.org/2000/01/rdf-schema#label> "baufällig"@de .
+# 
+# https://www.w3id.org/def/reo#DISTRICT
+<https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/2000/01/rdf-schema#label> "Fernwärme"@de .
+# 
+# https://www.w3id.org/def/reo#DISTRICT_HEATING
+<https://www.w3id.org/def/reo#DISTRICT_HEATING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DISTRICT_HEATING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#DISTRICT_HEATING> <http://www.w3.org/2000/01/rdf-schema#label> "Fernwärme"@de .
+# 
+# https://www.w3id.org/def/reo#DRAFTED
+<https://www.w3id.org/def/reo#DRAFTED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DRAFTED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#DRAFTED> <http://www.w3.org/2000/01/rdf-schema#label> "projektiert"@de .
+# 
+# https://www.w3id.org/def/reo#DUPLEX
+<https://www.w3id.org/def/reo#DUPLEX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#DUPLEX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#DUPLEX> <http://www.w3.org/2000/01/rdf-schema#label> "Duplex-Garage"@de .
+# 
+# https://www.w3id.org/def/reo#E
+<https://www.w3id.org/def/reo#E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#E> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#E> <http://www.w3.org/2000/01/rdf-schema#label> "E"@de .
+# 
+# https://www.w3id.org/def/reo#ELECTRIC
+<https://www.w3id.org/def/reo#ELECTRIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ELECTRIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#ELECTRIC> <http://www.w3.org/2000/01/rdf-schema#label> "Elektro"@de .
+# 
+# https://www.w3id.org/def/reo#ELETRICITY
+<https://www.w3id.org/def/reo#ELETRICITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ELETRICITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#ELETRICITY> <http://www.w3.org/2000/01/rdf-schema#label> "Strom"@de .
+# 
+# https://www.w3id.org/def/reo#F
+<https://www.w3id.org/def/reo#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#F> <http://www.w3.org/2000/01/rdf-schema#label> "F"@de .
+# 
+# https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED
+<https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED> <http://www.w3.org/2000/01/rdf-schema#label> "Erstbezug nach Sanierung"@de .
+# 
+# https://www.w3id.org/def/reo#FLAT
+<https://www.w3id.org/def/reo#FLAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#FLAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#RealEstateType> .
+<https://www.w3id.org/def/reo#FLAT> <http://www.w3.org/2000/01/rdf-schema#label> "Wohnung"@de .
+# 
+# https://www.w3id.org/def/reo#FRAMING
+<https://www.w3id.org/def/reo#FRAMING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#FRAMING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#FRAMING> <http://www.w3.org/2000/01/rdf-schema#label> "Rohbau"@de .
+# 
+# https://www.w3id.org/def/reo#FULLYRENOVATED
+<https://www.w3id.org/def/reo#FULLYRENOVATED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#FULLYRENOVATED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#FULLYRENOVATED> <http://www.w3.org/2000/01/rdf-schema#label> "vollständig renoviert"@de .
+# 
+# https://www.w3id.org/def/reo#G
+<https://www.w3id.org/def/reo#G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#G> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#G> <http://www.w3.org/2000/01/rdf-schema#label> "G"@de .
+# 
+# https://www.w3id.org/def/reo#GARAGE
+<https://www.w3id.org/def/reo#GARAGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#GARAGE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#GARAGE> <http://www.w3.org/2000/01/rdf-schema#label> "Garage"@de .
+# 
+# https://www.w3id.org/def/reo#GAS
+<https://www.w3id.org/def/reo#GAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#GAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#GAS> <http://www.w3.org/2000/01/rdf-schema#label> "Gas"@de .
+# 
+# https://www.w3id.org/def/reo#GEOTHERMICS
+<https://www.w3id.org/def/reo#GEOTHERMICS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#GEOTHERMICS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#GEOTHERMICS> <http://www.w3.org/2000/01/rdf-schema#label> "Erdwärme"@de .
+# 
+# https://www.w3id.org/def/reo#GROUND_FLOOR
+<https://www.w3id.org/def/reo#GROUND_FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#GROUND_FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#GROUND_FLOOR> <http://www.w3.org/2000/01/rdf-schema#label> "Erdgeschosswohnung"@de .
+# 
+# https://www.w3id.org/def/reo#H
+<https://www.w3id.org/def/reo#H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#H> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<https://www.w3id.org/def/reo#H> <http://www.w3.org/2000/01/rdf-schema#label> "H"@de .
+# 
+# https://www.w3id.org/def/reo#HALF_BASEMENT
+<https://www.w3id.org/def/reo#HALF_BASEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#HALF_BASEMENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#HALF_BASEMENT> <http://www.w3.org/2000/01/rdf-schema#label> "Souterrain"@de .
+# 
+# https://www.w3id.org/def/reo#HEATPUMP
+<https://www.w3id.org/def/reo#HEATPUMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#HEATPUMP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#HEATPUMP> <http://www.w3.org/2000/01/rdf-schema#label> "Luft/Wasser Wärmepumpe"@de .
+# 
+# https://www.w3id.org/def/reo#HOTWATER
+<https://www.w3id.org/def/reo#HOTWATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#HOTWATER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#HOTWATER> <http://www.w3.org/2000/01/rdf-schema#label> "ergänzendes dezentrales Warmwasser"@de .
+# 
+# https://www.w3id.org/def/reo#HOUSE
+<https://www.w3id.org/def/reo#HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#RealEstateType> .
+<https://www.w3id.org/def/reo#HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Haus"@de .
+# 
+# https://www.w3id.org/def/reo#LIKENEW
+<https://www.w3id.org/def/reo#LIKENEW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#LIKENEW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#LIKENEW> <http://www.w3.org/2000/01/rdf-schema#label> "neuwertig"@de .
+# 
+# https://www.w3id.org/def/reo#LIVING
+<https://www.w3id.org/def/reo#LIVING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#LIVING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#UsageType> .
+<https://www.w3id.org/def/reo#LIVING> <http://www.w3.org/2000/01/rdf-schema#label> "Wohnen"@de .
+# 
+# https://www.w3id.org/def/reo#LOFT
+<https://www.w3id.org/def/reo#LOFT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#LOFT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#LOFT> <http://www.w3.org/2000/01/rdf-schema#label> "Loft"@de .
+# 
+# https://www.w3id.org/def/reo#LUXARY
+<https://www.w3id.org/def/reo#LUXARY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#LUXARY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
+<https://www.w3id.org/def/reo#LUXARY> <http://www.w3.org/2000/01/rdf-schema#label> "luxuriös"@de .
+# 
+# https://www.w3id.org/def/reo#MAISONETTE
+<https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/2000/01/rdf-schema#label> "Maisonette"@de .
+# 
+# https://www.w3id.org/def/reo#NEAT
+<https://www.w3id.org/def/reo#NEAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NEAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#NEAT> <http://www.w3.org/2000/01/rdf-schema#label> "gepflegt"@de .
+# 
+# https://www.w3id.org/def/reo#NEEDRENOVATING
+<https://www.w3id.org/def/reo#NEEDRENOVATING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NEEDRENOVATING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#NEEDRENOVATING> <http://www.w3.org/2000/01/rdf-schema#label> "renovierungsbedürftig"@de .
+# 
+# https://www.w3id.org/def/reo#NEW
+<https://www.w3id.org/def/reo#NEW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NEW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#NEW> <http://www.w3.org/2000/01/rdf-schema#label> "Erstbezug"@de .
+# 
+# https://www.w3id.org/def/reo#NORMAL
+<https://www.w3id.org/def/reo#NORMAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NORMAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
+<https://www.w3id.org/def/reo#NORMAL> <http://www.w3.org/2000/01/rdf-schema#label> "normal"@de .
+# 
+# https://www.w3id.org/def/reo#NOT_ALLOWED
+<https://www.w3id.org/def/reo#NOT_ALLOWED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NOT_ALLOWED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#TenantGuidelines> .
+<https://www.w3id.org/def/reo#NOT_ALLOWED> <http://www.w3.org/2000/01/rdf-schema#label> "nicht erlaubt"@de .
+# 
+# https://www.w3id.org/def/reo#NOT_NEEDED
+<https://www.w3id.org/def/reo#NOT_NEEDED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NOT_NEEDED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyPass> .
+<https://www.w3id.org/def/reo#NOT_NEEDED> <http://www.w3.org/2000/01/rdf-schema#label> "nicht benötigt"@de .
+# 
+# https://www.w3id.org/def/reo#NOT_PRESENT
+<https://www.w3id.org/def/reo#NOT_PRESENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NOT_PRESENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyPass> .
+<https://www.w3id.org/def/reo#NOT_PRESENT> <http://www.w3.org/2000/01/rdf-schema#label> "nicht vorhanden"@de .
+# 
+# https://www.w3id.org/def/reo#NOT_SPECIFIED
+<https://www.w3id.org/def/reo#NOT_SPECIFIED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#NOT_SPECIFIED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#NOT_SPECIFIED> <http://www.w3.org/2000/01/rdf-schema#label> "nicht spezifiziert"@de .
+# 
+# https://www.w3id.org/def/reo#OIL
+<https://www.w3id.org/def/reo#OIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#OIL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#OIL> <http://www.w3.org/2000/01/rdf-schema#label> "Öl"@de .
+# 
+# https://www.w3id.org/def/reo#OLD_TENANT
+<https://www.w3id.org/def/reo#OLD_TENANT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#OLD_TENANT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CaretakerContact> .
+<https://www.w3id.org/def/reo#OLD_TENANT> <http://www.w3.org/2000/01/rdf-schema#label> "Altmieter"@de .
+# 
+# https://www.w3id.org/def/reo#OTHER
+<https://www.w3id.org/def/reo#OTHER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#OTHER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#OTHER> <http://www.w3.org/2000/01/rdf-schema#label> "sonstige"@de .
+# 
+# https://www.w3id.org/def/reo#OUTSIDE
+<https://www.w3id.org/def/reo#OUTSIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#OUTSIDE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#OUTSIDE> <http://www.w3.org/2000/01/rdf-schema#label> "Außenstellplatz"@de .
+# 
+# https://www.w3id.org/def/reo#PELLET
+<https://www.w3id.org/def/reo#PELLET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#PELLET> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#PELLET> <http://www.w3.org/2000/01/rdf-schema#label> "Pellet"@de .
+# 
+# https://www.w3id.org/def/reo#PENTHOUSE
+<https://www.w3id.org/def/reo#PENTHOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#PENTHOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#PENTHOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Penthouse"@de .
+# 
+# https://www.w3id.org/def/reo#PRESENT
+<https://www.w3id.org/def/reo#PRESENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#PRESENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyPass> .
+<https://www.w3id.org/def/reo#PRESENT> <http://www.w3.org/2000/01/rdf-schema#label> "vorhanden"@de .
+# 
+# https://www.w3id.org/def/reo#RAISED_GROUND_FLOOR
+<https://www.w3id.org/def/reo#RAISED_GROUND_FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#RAISED_GROUND_FLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#RAISED_GROUND_FLOOR> <http://www.w3.org/2000/01/rdf-schema#label> "Hochparterre"@de .
+# 
+# https://www.w3id.org/def/reo#REFURBISHED
+<https://www.w3id.org/def/reo#REFURBISHED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#REFURBISHED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#REFURBISHED> <http://www.w3.org/2000/01/rdf-schema#label> "saniert"@de .
+# 
+# https://www.w3id.org/def/reo#RENT
+<https://www.w3id.org/def/reo#RENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#RENT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#MarketingType> .
+<https://www.w3id.org/def/reo#RENT> <http://www.w3.org/2000/01/rdf-schema#label> "Miete"@de .
+# 
+# https://www.w3id.org/def/reo#ROOF_STOREY
+<https://www.w3id.org/def/reo#ROOF_STOREY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#ROOF_STOREY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#ROOF_STOREY> <http://www.w3.org/2000/01/rdf-schema#label> "Dachgeschosswohnung"@de .
+# 
+# https://www.w3id.org/def/reo#SALE
+<https://www.w3id.org/def/reo#SALE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SALE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#MarketingType> .
+<https://www.w3id.org/def/reo#SALE> <http://www.w3.org/2000/01/rdf-schema#label> "Verkauf"@de .
+# 
+# https://www.w3id.org/def/reo#SELF_CONTAINED
+<https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/2000/01/rdf-schema#label> "Etagenheizung"@de .
+# 
+# https://www.w3id.org/def/reo#SIMPLE
+<https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
+<https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/2000/01/rdf-schema#label> "einfach"@de .
+# 
+# https://www.w3id.org/def/reo#SOLAR
+<https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/2000/01/rdf-schema#label> "Solar"@de .
+# 
+# https://www.w3id.org/def/reo#STOVE
+<https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/2000/01/rdf-schema#label> "Ofenheizung"@de .
+# 
+# https://www.w3id.org/def/reo#STREAMLINED
+<https://www.w3id.org/def/reo#STREAMLINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#STREAMLINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Condition> .
+<https://www.w3id.org/def/reo#STREAMLINED> <http://www.w3.org/2000/01/rdf-schema#label> "modernisiert"@de .
+# 
+# https://www.w3id.org/def/reo#TEMPORARY_LIVING
+<https://www.w3id.org/def/reo#TEMPORARY_LIVING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#TEMPORARY_LIVING> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#UsageType> .
+<https://www.w3id.org/def/reo#TEMPORARY_LIVING> <http://www.w3.org/2000/01/rdf-schema#label> "Zeitweiliges Wohnen"@de .
+# 
+# https://www.w3id.org/def/reo#TERRACED_FLAT
+<https://www.w3id.org/def/reo#TERRACED_FLAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#TERRACED_FLAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
+<https://www.w3id.org/def/reo#TERRACED_FLAT> <http://www.w3.org/2000/01/rdf-schema#label> "Terrassenwohnung"@de .
+# 
+# https://www.w3id.org/def/reo#UNDERFLOOR
+<https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/2000/01/rdf-schema#label> "Fußbodenheizung"@de .
+# 
+# https://www.w3id.org/def/reo#UNDERGROUND
+<https://www.w3id.org/def/reo#UNDERGROUND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#UNDERGROUND> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
+<https://www.w3id.org/def/reo#UNDERGROUND> <http://www.w3.org/2000/01/rdf-schema#label> "Tiefgarage"@de .
+# 
+# https://www.w3id.org/def/reo#UPPER
+<https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
+<https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/2000/01/rdf-schema#label> "gehoben"@de .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid37 <http://www.w3.org/2002/07/owl#members> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Address> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#CaretakerContact> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Condition> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyCarrier> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPass> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassType> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EquipmentCondition> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#HeatingType> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#TenantGuidelines> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid48 <http://www.w3.org/2002/07/owl#members> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#ApartmentType> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#MarketingType> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#RealEstateType> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#UsageType> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid53 <http://www.w3.org/2002/07/owl#members> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyCarrier> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassType> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#HeatingType> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid58 <http://www.w3.org/2002/07/owl#members> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Feature> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#RealEstate> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Type> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
