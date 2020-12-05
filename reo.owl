@@ -1,0 +1,1147 @@
+@prefix : <https://www.w3id.org/def/reo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix reo: <https://www.w3id.org/def/reo#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <https://www.w3id.org/def/reo> .
+
+<https://www.w3id.org/def/reo> rdf:type owl:Ontology ;
+                                dc:creator "Tim Fock" ;
+                                terms:licence <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                terms:title "Real Estate Ontology" ;
+                                rdfs:comment "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." ;
+                                owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/licence
+terms:licence rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+terms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.w3id.org/def/reo#address
+reo:address rdf:type owl:ObjectProperty ;
+            rdfs:label "Adresse"@de .
+
+
+###  https://www.w3id.org/def/reo#apartmentType
+reo:apartmentType rdf:type owl:ObjectProperty ;
+                  rdfs:label "Apartmenttyp"@de .
+
+
+###  https://www.w3id.org/def/reo#cat
+reo:cat rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf reo:tenantGuidelines ;
+        rdfs:label "Katze"@de .
+
+
+###  https://www.w3id.org/def/reo#commercialUse
+reo:commercialUse rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf reo:tenantGuidelines ;
+                  rdfs:label "kommerzielle Nutzung"@de .
+
+
+###  https://www.w3id.org/def/reo#condition
+reo:condition rdf:type owl:ObjectProperty ;
+              rdfs:label "Zustand"@de .
+
+
+###  https://www.w3id.org/def/reo#dog
+reo:dog rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf reo:tenantGuidelines ;
+        rdfs:label "Hund"@de .
+
+
+###  https://www.w3id.org/def/reo#energyCarrier
+reo:energyCarrier rdf:type owl:ObjectProperty ;
+                  rdfs:label "Energieträger"@de .
+
+
+###  https://www.w3id.org/def/reo#energyEfficiencyClass
+reo:energyEfficiencyClass rdf:type owl:ObjectProperty ;
+                          rdfs:label "Energieeffizienzklasse"@de .
+
+
+###  https://www.w3id.org/def/reo#energyPass
+reo:energyPass rdf:type owl:ObjectProperty ;
+               rdfs:label "Energieausweis"@de .
+
+
+###  https://www.w3id.org/def/reo#energypassType
+reo:energypassType rdf:type owl:ObjectProperty ;
+                   rdfs:label "Energieausweistyp"@de .
+
+
+###  https://www.w3id.org/def/reo#equipmentCondition
+reo:equipmentCondition rdf:type owl:ObjectProperty ;
+                       rdfs:label "Zustand der Inneneinrichtung"@de .
+
+
+###  https://www.w3id.org/def/reo#heatingType
+reo:heatingType rdf:type owl:ObjectProperty ;
+                rdfs:label "Heizungstyp"@de .
+
+
+###  https://www.w3id.org/def/reo#livingCommunity
+reo:livingCommunity rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf reo:tenantGuidelines ;
+                    rdfs:label "Wohngemeinschaft"@de .
+
+
+###  https://www.w3id.org/def/reo#marketingType
+reo:marketingType rdf:type owl:ObjectProperty ;
+                  rdfs:label "Vermarktungsart"@de .
+
+
+###  https://www.w3id.org/def/reo#otherPet
+reo:otherPet rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf reo:tenantGuidelines ;
+             rdfs:label "anderes Haustier"@de .
+
+
+###  https://www.w3id.org/def/reo#realEstateType
+reo:realEstateType rdf:type owl:ObjectProperty ;
+                   rdfs:label "Immobilientyp"@de .
+
+
+###  https://www.w3id.org/def/reo#smoking
+reo:smoking rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf reo:tenantGuidelines ;
+            rdfs:label "Rauchen"@de .
+
+
+###  https://www.w3id.org/def/reo#tenantGuidelines
+reo:tenantGuidelines rdf:type owl:ObjectProperty ;
+                     rdfs:label "Richtlinien für Mieter" .
+
+
+###  https://www.w3id.org/def/reo#usageType
+reo:usageType rdf:type owl:ObjectProperty ;
+              rdfs:label "Nutzungsart"@de .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.w3id.org/def/reo#additionalCost
+reo:additionalCost rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf reo:cost ;
+                   rdfs:label "Nebenkosten"@de .
+
+
+###  https://www.w3id.org/def/reo#bail
+reo:bail rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf reo:cost ;
+         rdfs:label "Kaution"@de .
+
+
+###  https://www.w3id.org/def/reo#carspaceCost
+reo:carspaceCost rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf reo:cost ;
+                 rdfs:label "Kosten für Stellplatz"@de .
+
+
+###  https://www.w3id.org/def/reo#city
+reo:city rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:range xsd:string ;
+         rdfs:label "Stadt"@de .
+
+
+###  https://www.w3id.org/def/reo#constructionYear
+reo:constructionYear rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf reo:year ;
+                     rdfs:range xsd:int ;
+                     rdfs:label "Baujahr"@de .
+
+
+###  https://www.w3id.org/def/reo#cost
+reo:cost rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:label "Kosten"@de .
+
+
+###  https://www.w3id.org/def/reo#countryCode
+reo:countryCode rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "Ländercode"@de .
+
+
+###  https://www.w3id.org/def/reo#floor
+reo:floor rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:range xsd:int ;
+          rdfs:label "Stockwerk"@de .
+
+
+###  https://www.w3id.org/def/reo#floorCount
+reo:floorCount rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:range xsd:int ;
+               rdfs:label "Anzahl der Stockwerke"@de .
+
+
+###  https://www.w3id.org/def/reo#hasCellar
+reo:hasCellar rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:boolean ;
+              rdfs:label "hat Keller"@de .
+
+
+###  https://www.w3id.org/def/reo#hasFittedKitchen
+reo:hasFittedKitchen rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:label "hat Einbauküche"@de .
+
+
+###  https://www.w3id.org/def/reo#hasGarden
+reo:hasGarden rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:range xsd:boolean ;
+              rdfs:label "hat Garten"@de .
+
+
+###  https://www.w3id.org/def/reo#hasWashingMachineConnection
+reo:hasWashingMachineConnection rdf:type owl:DatatypeProperty ;
+                                rdfs:range xsd:boolean ;
+                                rdfs:label "hat Waschmaschinenanschluss"@de .
+
+
+###  https://www.w3id.org/def/reo#heatingCost
+reo:heatingCost rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf reo:cost ;
+                rdfs:label "Heizkosten"@de .
+
+
+###  https://www.w3id.org/def/reo#houseNumber
+reo:houseNumber rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:range xsd:int ;
+                rdfs:label "Hausnummer"@de .
+
+
+###  https://www.w3id.org/def/reo#livingSpace
+reo:livingSpace rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:range xsd:double ;
+                rdfs:label "Wohnfläche"@de .
+
+
+###  https://www.w3id.org/def/reo#maxHouseholdPersons
+reo:maxHouseholdPersons rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:int ;
+                        rdfs:label "maximale Anzahl der Personen im Haushalt"@de .
+
+
+###  https://www.w3id.org/def/reo#modernizationYear
+reo:modernizationYear rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf reo:year ;
+                      rdfs:range xsd:int ;
+                      rdfs:label "Jahr der Modernisierung"@de .
+
+
+###  https://www.w3id.org/def/reo#netRent
+reo:netRent rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf reo:cost ;
+            rdfs:label "Nettokaltmiete"@de .
+
+
+###  https://www.w3id.org/def/reo#numberOf
+reo:numberOf rdf:type owl:DatatypeProperty ;
+             rdfs:label "Anzahl"@de .
+
+
+###  https://www.w3id.org/def/reo#numberOfBathrooms
+reo:numberOfBathrooms rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf reo:numberOfRooms ;
+                      rdfs:range xsd:int ;
+                      rdfs:label "Anzahl der Badezimmer"@de .
+
+
+###  https://www.w3id.org/def/reo#numberOfBedrooms
+reo:numberOfBedrooms rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf reo:numberOfRooms ;
+                     rdfs:range xsd:int ;
+                     rdfs:label "Anzahl der Schlafzimmer"@de .
+
+
+###  https://www.w3id.org/def/reo#numberOfCarSpaces
+reo:numberOfCarSpaces rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf reo:numberOf ;
+                      rdfs:range xsd:int ;
+                      rdfs:label "Anzahl der Stellplätze"@de .
+
+
+###  https://www.w3id.org/def/reo#numberOfRooms
+reo:numberOfRooms rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf reo:numberOf ;
+                  rdfs:range xsd:int ;
+                  rdfs:label "Anzahl der Zimmer"@de .
+
+
+###  https://www.w3id.org/def/reo#purchasePrice
+reo:purchasePrice rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf reo:cost ;
+                  rdfs:label "Kaufpreis"@de .
+
+
+###  https://www.w3id.org/def/reo#street
+reo:street rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:range xsd:string ;
+           rdfs:label "Straße"@de .
+
+
+###  https://www.w3id.org/def/reo#title
+reo:title rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "Titel"@de .
+
+
+###  https://www.w3id.org/def/reo#year
+reo:year rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:label "Jahr"@de .
+
+
+###  https://www.w3id.org/def/reo#zipCode
+reo:zipCode rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:range xsd:int ;
+            rdfs:label "Postleitzahl"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.w3id.org/def/reo#AbstractFeature
+reo:AbstractFeature rdf:type owl:Class ;
+                    rdfs:subClassOf reo:Feature ;
+                    owl:disjointWith reo:PhysicalFeature ;
+                    rdfs:label "Abstrakte Eigenschaft"@de .
+
+
+###  https://www.w3id.org/def/reo#Address
+reo:Address rdf:type owl:Class ;
+            rdfs:subClassOf reo:AbstractFeature ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty reo:city ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty reo:countryCode ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty reo:houseNumber ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty reo:street ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty reo:zipCode ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ;
+            rdfs:label "Adresse"@de .
+
+
+###  https://www.w3id.org/def/reo#ApartmentType
+reo:ApartmentType rdf:type owl:Class ;
+                  rdfs:subClassOf reo:Type ;
+                  rdfs:label "Wohnungstyp"@de .
+
+
+###  https://www.w3id.org/def/reo#CarSpace
+reo:CarSpace rdf:type owl:Class ;
+             rdfs:subClassOf reo:PhysicalFeature ;
+             rdfs:label "Stellplatz"@de .
+
+
+###  https://www.w3id.org/def/reo#CaretakerContact
+reo:CaretakerContact rdf:type owl:Class ;
+                     rdfs:subClassOf reo:AbstractFeature ;
+                     rdfs:label "Ansprechpartner"@de .
+
+
+###  https://www.w3id.org/def/reo#Condition
+reo:Condition rdf:type owl:Class ;
+              rdfs:subClassOf reo:AbstractFeature ;
+              rdfs:label "Zustand"@de .
+
+
+###  https://www.w3id.org/def/reo#EnergyCarrier
+reo:EnergyCarrier rdf:type owl:Class ;
+                  rdfs:subClassOf reo:AbstractFeature ;
+                  rdfs:label "Energieträger"@de .
+
+
+###  https://www.w3id.org/def/reo#EnergyEfficiencyClass
+reo:EnergyEfficiencyClass rdf:type owl:Class ;
+                          rdfs:subClassOf reo:AbstractFeature ;
+                          rdfs:label "Energieeffizienz"@de .
+
+
+###  https://www.w3id.org/def/reo#EnergyPass
+reo:EnergyPass rdf:type owl:Class ;
+               rdfs:subClassOf reo:AbstractFeature ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:energyCarrier ;
+                                 owl:someValuesFrom reo:EnergyCarrier
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:heatingType ;
+                                 owl:someValuesFrom reo:HeatingType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:energyEfficiencyClass ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:EnergyEfficiencyClass
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:energypassType ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:EnergyPassType
+                               ] ;
+               rdfs:label "Energieausweis"@de .
+
+
+###  https://www.w3id.org/def/reo#EnergyPassType
+reo:EnergyPassType rdf:type owl:Class ;
+                   rdfs:subClassOf reo:AbstractFeature ;
+                   rdfs:label "Energieausweistyp"@de .
+
+
+###  https://www.w3id.org/def/reo#EquipmentCondition
+reo:EquipmentCondition rdf:type owl:Class ;
+                       rdfs:subClassOf reo:AbstractFeature ;
+                       rdfs:label "Zustand der Inneneinrichtung"@de .
+
+
+###  https://www.w3id.org/def/reo#Feature
+reo:Feature rdf:type owl:Class ;
+            rdfs:label "Eigenschaft"@de .
+
+
+###  https://www.w3id.org/def/reo#HeatingType
+reo:HeatingType rdf:type owl:Class ;
+                rdfs:subClassOf reo:AbstractFeature ;
+                rdfs:label "Heizungstyp"@de .
+
+
+###  https://www.w3id.org/def/reo#MarketingType
+reo:MarketingType rdf:type owl:Class ;
+                  rdfs:subClassOf reo:Type ;
+                  rdfs:label "Vermarktungsart"@de .
+
+
+###  https://www.w3id.org/def/reo#PhysicalFeature
+reo:PhysicalFeature rdf:type owl:Class ;
+                    rdfs:subClassOf reo:Feature ;
+                    rdfs:label "Physische Eigenschaft"@de .
+
+
+###  https://www.w3id.org/def/reo#RealEstate
+reo:RealEstate rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Class ;
+                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty reo:netRent ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:double
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty reo:purchasePrice ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onDataRange xsd:double
+                                               ]
+                                             )
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:tenantGuidelines ;
+                                 owl:someValuesFrom reo:TenantGuidelines
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:address ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:Address
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:apartmentType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:ApartmentType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:marketingType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:MarketingType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:realEstateType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:RealEstateType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:usageType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:UsageType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:energyPass ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:EnergyPass
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:livingSpace ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:title ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:additionalCost ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:bail ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:carspaceCost ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:constructionYear ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:floor ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:floorCount ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasCellar ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasFittedKitchen ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasGarden ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasWashingMachineConnection ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:heatingCost ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:maxHouseholdPersons ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:modernizationYear ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:int
+                               ] ;
+               rdfs:label "Immobilie"@de .
+
+
+###  https://www.w3id.org/def/reo#RealEstateType
+reo:RealEstateType rdf:type owl:Class ;
+                   rdfs:subClassOf reo:Type ;
+                   rdfs:label "Immobilientyp"@de .
+
+
+###  https://www.w3id.org/def/reo#TenantGuidelines
+reo:TenantGuidelines rdf:type owl:Class ;
+                     rdfs:subClassOf reo:AbstractFeature ;
+                     rdfs:label "Richtlinien für Mieter"@de .
+
+
+###  https://www.w3id.org/def/reo#Type
+reo:Type rdf:type owl:Class ;
+         rdfs:label "Fixe Werte"@de .
+
+
+###  https://www.w3id.org/def/reo#UsageType
+reo:UsageType rdf:type owl:Class ;
+              rdfs:subClassOf reo:Type ;
+              rdfs:label "Nutzungsart"@de .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.w3id.org/def/reo#A
+reo:A rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "A"@de .
+
+
+###  https://www.w3id.org/def/reo#AGREEMENT
+reo:AGREEMENT rdf:type owl:NamedIndividual ,
+                       reo:TenantGuidelines ;
+              rdfs:label "nach Vereinbarung"@de .
+
+
+###  https://www.w3id.org/def/reo#ALLOWED
+reo:ALLOWED rdf:type owl:NamedIndividual ,
+                     reo:TenantGuidelines ;
+            rdfs:label "erlaubt"@de .
+
+
+###  https://www.w3id.org/def/reo#ALTERNATIVE
+reo:ALTERNATIVE rdf:type owl:NamedIndividual ,
+                         reo:EnergyCarrier ;
+                rdfs:label "Alternativ"@de .
+
+
+###  https://www.w3id.org/def/reo#APARTMENT
+reo:APARTMENT rdf:type owl:NamedIndividual ,
+                       reo:ApartmentType ;
+              rdfs:label "Wohnung"@de .
+
+
+###  https://www.w3id.org/def/reo#ASAGREED
+reo:ASAGREED rdf:type owl:NamedIndividual ,
+                      reo:Condition ;
+             rdfs:label "nach Vereinbarung"@de .
+
+
+###  https://www.w3id.org/def/reo#A_PLUS
+reo:A_PLUS rdf:type owl:NamedIndividual ,
+                    reo:EnergyEfficiencyClass ;
+           rdfs:label "A+"@de .
+
+
+###  https://www.w3id.org/def/reo#B
+reo:B rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "B"@de .
+
+
+###  https://www.w3id.org/def/reo#C
+reo:C rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "C"@de .
+
+
+###  https://www.w3id.org/def/reo#CARBON
+reo:CARBON rdf:type owl:NamedIndividual ,
+                    reo:EnergyCarrier ;
+           rdfs:label "Kohle"@de .
+
+
+###  https://www.w3id.org/def/reo#CARETAKER
+reo:CARETAKER rdf:type owl:NamedIndividual ,
+                       reo:CaretakerContact ;
+              rdfs:label "Hausmeister"@de .
+
+
+###  https://www.w3id.org/def/reo#CARPARK
+reo:CARPARK rdf:type owl:NamedIndividual ,
+                     reo:CarSpace ;
+            rdfs:label "Parkhaus"@de .
+
+
+###  https://www.w3id.org/def/reo#CARPORT
+reo:CARPORT rdf:type owl:NamedIndividual ,
+                     reo:CarSpace ;
+            rdfs:label "Carport"@de .
+
+
+###  https://www.w3id.org/def/reo#CENTRAL
+reo:CENTRAL rdf:type owl:NamedIndividual ,
+                     reo:HeatingType ;
+            rdfs:label "Zentralheizung"@de .
+
+
+###  https://www.w3id.org/def/reo#COGENERATIONUNIT
+reo:COGENERATIONUNIT rdf:type owl:NamedIndividual ,
+                              reo:EnergyCarrier ;
+                     rdfs:label "Blockheizkraftwerk"@de .
+
+
+###  https://www.w3id.org/def/reo#COMPANY
+reo:COMPANY rdf:type owl:NamedIndividual ,
+                     reo:CaretakerContact ;
+            rdfs:label "Firma"@de .
+
+
+###  https://www.w3id.org/def/reo#CONSUMPTION
+reo:CONSUMPTION rdf:type owl:NamedIndividual ,
+                         reo:EnergyPassType ;
+                rdfs:label "Verbrauchsausweis"@de .
+
+
+###  https://www.w3id.org/def/reo#CORED
+reo:CORED rdf:type owl:NamedIndividual ,
+                   reo:Condition ;
+          rdfs:label "entkernt"@de .
+
+
+###  https://www.w3id.org/def/reo#D
+reo:D rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "D"@de .
+
+
+###  https://www.w3id.org/def/reo#DEMAND
+reo:DEMAND rdf:type owl:NamedIndividual ,
+                    reo:EnergyPassType ;
+           rdfs:label "Bedarfsausweis"@de .
+
+
+###  https://www.w3id.org/def/reo#DEMOLITION
+reo:DEMOLITION rdf:type owl:NamedIndividual ,
+                        reo:Condition ;
+               rdfs:label "Abrissobjekt"@de .
+
+
+###  https://www.w3id.org/def/reo#DERELICT
+reo:DERELICT rdf:type owl:NamedIndividual ,
+                      reo:Condition ;
+             rdfs:label "baufällig"@de .
+
+
+###  https://www.w3id.org/def/reo#DISTRICT
+reo:DISTRICT rdf:type owl:NamedIndividual ,
+                      reo:HeatingType ;
+             rdfs:label "Fernwärme"@de .
+
+
+###  https://www.w3id.org/def/reo#DISTRICT_HEATING
+reo:DISTRICT_HEATING rdf:type owl:NamedIndividual ,
+                              reo:EnergyCarrier ;
+                     rdfs:label "Fernwärme"@de .
+
+
+###  https://www.w3id.org/def/reo#DRAFTED
+reo:DRAFTED rdf:type owl:NamedIndividual ,
+                     reo:Condition ;
+            rdfs:label "projektiert"@de .
+
+
+###  https://www.w3id.org/def/reo#DUPLEX
+reo:DUPLEX rdf:type owl:NamedIndividual ,
+                    reo:CarSpace ;
+           rdfs:label "Duplex-Garage"@de .
+
+
+###  https://www.w3id.org/def/reo#E
+reo:E rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "E"@de .
+
+
+###  https://www.w3id.org/def/reo#ELECTRIC
+reo:ELECTRIC rdf:type owl:NamedIndividual ,
+                      reo:EnergyCarrier ;
+             rdfs:label "Elektro"@de .
+
+
+###  https://www.w3id.org/def/reo#ELETRICITY
+reo:ELETRICITY rdf:type owl:NamedIndividual ,
+                        reo:EnergyCarrier ;
+               rdfs:label "Strom"@de .
+
+
+###  https://www.w3id.org/def/reo#F
+reo:F rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "F"@de .
+
+
+###  https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED
+reo:FIRSTAFTERREFURBISHED rdf:type owl:NamedIndividual ,
+                                   reo:Condition ;
+                          rdfs:label "Erstbezug nach Sanierung"@de .
+
+
+###  https://www.w3id.org/def/reo#FLAT
+reo:FLAT rdf:type owl:NamedIndividual ,
+                  reo:RealEstateType ;
+         rdfs:label "Wohnung"@de .
+
+
+###  https://www.w3id.org/def/reo#FRAMING
+reo:FRAMING rdf:type owl:NamedIndividual ,
+                     reo:Condition ;
+            rdfs:label "Rohbau"@de .
+
+
+###  https://www.w3id.org/def/reo#FULLYRENOVATED
+reo:FULLYRENOVATED rdf:type owl:NamedIndividual ,
+                            reo:Condition ;
+                   rdfs:label "vollständig renoviert"@de .
+
+
+###  https://www.w3id.org/def/reo#G
+reo:G rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "G"@de .
+
+
+###  https://www.w3id.org/def/reo#GARAGE
+reo:GARAGE rdf:type owl:NamedIndividual ,
+                    reo:CarSpace ;
+           rdfs:label "Garage"@de .
+
+
+###  https://www.w3id.org/def/reo#GAS
+reo:GAS rdf:type owl:NamedIndividual ,
+                 reo:EnergyCarrier ;
+        rdfs:label "Gas"@de .
+
+
+###  https://www.w3id.org/def/reo#GEOTHERMICS
+reo:GEOTHERMICS rdf:type owl:NamedIndividual ,
+                         reo:EnergyCarrier ;
+                rdfs:label "Erdwärme"@de .
+
+
+###  https://www.w3id.org/def/reo#GROUND_FLOOR
+reo:GROUND_FLOOR rdf:type owl:NamedIndividual ,
+                          reo:ApartmentType ;
+                 rdfs:label "Erdgeschosswohnung"@de .
+
+
+###  https://www.w3id.org/def/reo#H
+reo:H rdf:type owl:NamedIndividual ,
+               reo:EnergyEfficiencyClass ;
+      rdfs:label "H"@de .
+
+
+###  https://www.w3id.org/def/reo#HALF_BASEMENT
+reo:HALF_BASEMENT rdf:type owl:NamedIndividual ,
+                           reo:ApartmentType ;
+                  rdfs:label "Souterrain"@de .
+
+
+###  https://www.w3id.org/def/reo#HEATPUMP
+reo:HEATPUMP rdf:type owl:NamedIndividual ,
+                      reo:EnergyCarrier ;
+             rdfs:label "Luft/Wasser Wärmepumpe"@de .
+
+
+###  https://www.w3id.org/def/reo#HOTWATER
+reo:HOTWATER rdf:type owl:NamedIndividual ,
+                      reo:EnergyCarrier ;
+             rdfs:label "ergänzendes dezentrales Warmwasser"@de .
+
+
+###  https://www.w3id.org/def/reo#HOUSE
+reo:HOUSE rdf:type owl:NamedIndividual ,
+                   reo:RealEstateType ;
+          rdfs:label "Haus"@de .
+
+
+###  https://www.w3id.org/def/reo#LIKENEW
+reo:LIKENEW rdf:type owl:NamedIndividual ,
+                     reo:Condition ;
+            rdfs:label "neuwertig"@de .
+
+
+###  https://www.w3id.org/def/reo#LIVING
+reo:LIVING rdf:type owl:NamedIndividual ,
+                    reo:UsageType ;
+           rdfs:label "Wohnen"@de .
+
+
+###  https://www.w3id.org/def/reo#LOFT
+reo:LOFT rdf:type owl:NamedIndividual ,
+                  reo:ApartmentType ;
+         rdfs:label "Loft"@de .
+
+
+###  https://www.w3id.org/def/reo#LUXARY
+reo:LUXARY rdf:type owl:NamedIndividual ,
+                    reo:EquipmentCondition ;
+           rdfs:label "luxuriös"@de .
+
+
+###  https://www.w3id.org/def/reo#MAISONETTE
+reo:MAISONETTE rdf:type owl:NamedIndividual ,
+                        reo:ApartmentType ;
+               rdfs:label "Maisonette"@de .
+
+
+###  https://www.w3id.org/def/reo#NEAT
+reo:NEAT rdf:type owl:NamedIndividual ,
+                  reo:Condition ;
+         rdfs:label "gepflegt"@de .
+
+
+###  https://www.w3id.org/def/reo#NEEDRENOVATING
+reo:NEEDRENOVATING rdf:type owl:NamedIndividual ,
+                            reo:Condition ;
+                   rdfs:label "renovierungsbedürftig"@de .
+
+
+###  https://www.w3id.org/def/reo#NEW
+reo:NEW rdf:type owl:NamedIndividual ,
+                 reo:Condition ;
+        rdfs:label "Erstbezug"@de .
+
+
+###  https://www.w3id.org/def/reo#NORMAL
+reo:NORMAL rdf:type owl:NamedIndividual ,
+                    reo:EquipmentCondition ;
+           rdfs:label "normal"@de .
+
+
+###  https://www.w3id.org/def/reo#NOT_ALLOWED
+reo:NOT_ALLOWED rdf:type owl:NamedIndividual ,
+                         reo:TenantGuidelines ;
+                rdfs:label "nicht erlaubt"@de .
+
+
+###  https://www.w3id.org/def/reo#NOT_NEEDED
+reo:NOT_NEEDED rdf:type owl:NamedIndividual ,
+                        reo:EnergyPass ;
+               rdfs:label "nicht benötigt"@de .
+
+
+###  https://www.w3id.org/def/reo#NOT_PRESENT
+reo:NOT_PRESENT rdf:type owl:NamedIndividual ,
+                         reo:EnergyPass ;
+                rdfs:label "nicht vorhanden"@de .
+
+
+###  https://www.w3id.org/def/reo#NOT_SPECIFIED
+reo:NOT_SPECIFIED rdf:type owl:NamedIndividual ,
+                           reo:CarSpace ;
+                  rdfs:label "nicht spezifiziert"@de .
+
+
+###  https://www.w3id.org/def/reo#OIL
+reo:OIL rdf:type owl:NamedIndividual ,
+                 reo:EnergyCarrier ;
+        rdfs:label "Öl"@de .
+
+
+###  https://www.w3id.org/def/reo#OLD_TENANT
+reo:OLD_TENANT rdf:type owl:NamedIndividual ,
+                        reo:CaretakerContact ;
+               rdfs:label "Altmieter"@de .
+
+
+###  https://www.w3id.org/def/reo#OTHER
+reo:OTHER rdf:type owl:NamedIndividual ,
+                   reo:ApartmentType ;
+          rdfs:label "sonstige"@de .
+
+
+###  https://www.w3id.org/def/reo#OUTSIDE
+reo:OUTSIDE rdf:type owl:NamedIndividual ,
+                     reo:CarSpace ;
+            rdfs:label "Außenstellplatz"@de .
+
+
+###  https://www.w3id.org/def/reo#PELLET
+reo:PELLET rdf:type owl:NamedIndividual ,
+                    reo:EnergyCarrier ;
+           rdfs:label "Pellet"@de .
+
+
+###  https://www.w3id.org/def/reo#PENTHOUSE
+reo:PENTHOUSE rdf:type owl:NamedIndividual ,
+                       reo:ApartmentType ;
+              rdfs:label "Penthouse"@de .
+
+
+###  https://www.w3id.org/def/reo#PRESENT
+reo:PRESENT rdf:type owl:NamedIndividual ,
+                     reo:EnergyPass ;
+            rdfs:label "vorhanden"@de .
+
+
+###  https://www.w3id.org/def/reo#RAISED_GROUND_FLOOR
+reo:RAISED_GROUND_FLOOR rdf:type owl:NamedIndividual ,
+                                 reo:ApartmentType ;
+                        rdfs:label "Hochparterre"@de .
+
+
+###  https://www.w3id.org/def/reo#REFURBISHED
+reo:REFURBISHED rdf:type owl:NamedIndividual ,
+                         reo:Condition ;
+                rdfs:label "saniert"@de .
+
+
+###  https://www.w3id.org/def/reo#RENT
+reo:RENT rdf:type owl:NamedIndividual ,
+                  reo:MarketingType ;
+         rdfs:label "Miete"@de .
+
+
+###  https://www.w3id.org/def/reo#ROOF_STOREY
+reo:ROOF_STOREY rdf:type owl:NamedIndividual ,
+                         reo:ApartmentType ;
+                rdfs:label "Dachgeschosswohnung"@de .
+
+
+###  https://www.w3id.org/def/reo#SALE
+reo:SALE rdf:type owl:NamedIndividual ,
+                  reo:MarketingType ;
+         rdfs:label "Verkauf"@de .
+
+
+###  https://www.w3id.org/def/reo#SELF_CONTAINED
+reo:SELF_CONTAINED rdf:type owl:NamedIndividual ,
+                            reo:HeatingType ;
+                   rdfs:label "Etagenheizung"@de .
+
+
+###  https://www.w3id.org/def/reo#SIMPLE
+reo:SIMPLE rdf:type owl:NamedIndividual ,
+                    reo:EquipmentCondition ;
+           rdfs:label "einfach"@de .
+
+
+###  https://www.w3id.org/def/reo#SOLAR
+reo:SOLAR rdf:type owl:NamedIndividual ,
+                   reo:EnergyCarrier ;
+          rdfs:label "Solar"@de .
+
+
+###  https://www.w3id.org/def/reo#STOVE
+reo:STOVE rdf:type owl:NamedIndividual ,
+                   reo:HeatingType ;
+          rdfs:label "Ofenheizung"@de .
+
+
+###  https://www.w3id.org/def/reo#STREAMLINED
+reo:STREAMLINED rdf:type owl:NamedIndividual ,
+                         reo:Condition ;
+                rdfs:label "modernisiert"@de .
+
+
+###  https://www.w3id.org/def/reo#TEMPORARY_LIVING
+reo:TEMPORARY_LIVING rdf:type owl:NamedIndividual ,
+                              reo:UsageType ;
+                     rdfs:label "Zeitweiliges Wohnen"@de .
+
+
+###  https://www.w3id.org/def/reo#TERRACED_FLAT
+reo:TERRACED_FLAT rdf:type owl:NamedIndividual ,
+                           reo:ApartmentType ;
+                  rdfs:label "Terrassenwohnung"@de .
+
+
+###  https://www.w3id.org/def/reo#UNDERFLOOR
+reo:UNDERFLOOR rdf:type owl:NamedIndividual ,
+                        reo:HeatingType ;
+               rdfs:label "Fußbodenheizung"@de .
+
+
+###  https://www.w3id.org/def/reo#UNDERGROUND
+reo:UNDERGROUND rdf:type owl:NamedIndividual ,
+                         reo:CarSpace ;
+                rdfs:label "Tiefgarage"@de .
+
+
+###  https://www.w3id.org/def/reo#UPPER
+reo:UPPER rdf:type owl:NamedIndividual ,
+                   reo:EquipmentCondition ;
+          rdfs:label "gehoben"@de .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( reo:Address
+                reo:CaretakerContact
+                reo:Condition
+                reo:EnergyCarrier
+                reo:EnergyEfficiencyClass
+                reo:EnergyPass
+                reo:EnergyPassType
+                reo:EquipmentCondition
+                reo:HeatingType
+                reo:TenantGuidelines
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( reo:ApartmentType
+                reo:MarketingType
+                reo:RealEstateType
+                reo:UsageType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( reo:EnergyCarrier
+                reo:EnergyEfficiencyClass
+                reo:EnergyPassType
+                reo:HeatingType
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( reo:Feature
+                reo:RealEstate
+                reo:Type
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
