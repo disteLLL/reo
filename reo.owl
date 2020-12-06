@@ -190,6 +190,11 @@ reo:countryCode rdf:type owl:DatatypeProperty ;
                 rdfs:label "Ländercode"@de .
 
 
+###  https://www.w3id.org/def/reo#email
+reo:email rdf:type owl:DatatypeProperty ;
+          rdfs:label "E-Mail-Adresse"@de .
+
+
 ###  https://www.w3id.org/def/reo#floor
 reo:floor rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
@@ -255,6 +260,11 @@ reo:maxHouseholdPersons rdf:type owl:DatatypeProperty ;
                         rdfs:label "maximale Anzahl der Personen im Haushalt"@de .
 
 
+###  https://www.w3id.org/def/reo#minIncome
+reo:minIncome rdf:type owl:DatatypeProperty ;
+              rdfs:label "Mindesteinkommen"@de .
+
+
 ###  https://www.w3id.org/def/reo#modernizationYear
 reo:modernizationYear rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf reo:year ;
@@ -299,6 +309,11 @@ reo:numberOfRooms rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf reo:numberOf ;
                   rdfs:range xsd:int ;
                   rdfs:label "Anzahl der Zimmer"@de .
+
+
+###  https://www.w3id.org/def/reo#phoneNumber
+reo:phoneNumber rdf:type owl:DatatypeProperty ;
+                rdfs:label "Telefonnummer"@de .
 
 
 ###  https://www.w3id.org/def/reo#purchasePrice
@@ -390,7 +405,17 @@ reo:CarSpace rdf:type owl:Class ;
 
 ###  https://www.w3id.org/def/reo#CaretakerContact
 reo:CaretakerContact rdf:type owl:Class ;
-                     rdfs:subClassOf reo:AbstractFeature ;
+                     rdfs:subClassOf reo:AbstractFeature ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty reo:email ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty reo:phoneNumber ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ;
                      rdfs:label "Ansprechpartner"@de .
 
 
@@ -589,6 +614,11 @@ reo:RealEstate rdf:type owl:Class ;
                                  owl:onProperty reo:maxHouseholdPersons ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:minIncome ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:double
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:modernizationYear ;
