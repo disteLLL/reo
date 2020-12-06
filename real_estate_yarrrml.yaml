@@ -1,0 +1,103 @@
+prefixes:
+  ex: http://example.com/
+  reo: https://www.w3id.org/def/reo#
+  
+sources:
+  realEstateList:
+    access: real_estate_data.json
+    referenceFormulation: jsonpath
+    iterator: "$.realEstate[*]"
+
+mappings:
+  realEstate:
+    sources: realEstateList
+    s: ex:$(publicId)
+    po:
+      - [a, reo:RealEstate]
+      - [reo:title, $(title)]
+      - [reo:marketingType, reo:$(disposalType)~iri]
+      - [reo:realEstateType, reo:$(type)~iri]
+      - [reo:apartmentType, reo:$(apartmentType)~iri]
+      - [reo:houseType, reo:$(houseType)~iri]
+      - [reo:usageType, reo:$(usageType)~iri]
+      - [reo:livingSpace, $(allocation.livingSpace), xsd:double]
+      - [reo:numberOfRooms, $(allocation.rooms), xsd:int]
+      - [reo:numberOfBedrooms, $(allocation.bedroomCount), xsd:int]
+      - [reo:numberOfBathrooms, $(allocation.bathroomCount), xsd:int]
+      - [reo:floor, $(allocation.floor), xsd:int]
+      - [reo:floorCount, $(allocation.floorCount), xsd:int]
+      - [reo:hasGarden, $(allocation.garden), xsd:boolean]
+      - [reo:hasElevator, $(allocation.elevator), xsd:boolean]
+      - [reo:hasGuestToilet, $(allocation.guestToilet), xsd:boolean]
+      - [reo:hasFittedKitchen, $(allocation.kitchen), xsd:boolean]
+      - [reo:hasBalcony, $(allocation.balcony), xsd:boolean]
+      - [reo:hasCellar, $(allocation.cellar), xsd:boolean]
+      - [reo:hasWashingMachineConnection, $(allocation.washingmachine), xsd:boolean]
+      - [reo:netRent, $(costs.rentNet.amount), xsd:double]
+      - [reo:bail, $(costs.bailCosts.amount), xsd:double]
+      - [reo:additionalCost, $(costs.additionalCost.amount), xsd:double]
+      - [reo:carspaceCost, $(costs.carspaceCosts.amount), xsd:double]
+      - [reo:purchasePrice, $(costs.buyCost.amount), xsd:double]
+      - [reo:heatingCost, $(costs.heatingCost.amount), xsd:double]
+      - [reo:constructionYear, $(stats.buildYear), xsd:int]
+      - [reo:modernizationYear, $(stats.modernizationYear), xsd:int]
+      - [reo:condition, reo:$(conditions.condition)~iri]
+      - [reo:equipmentCondition, reo:$(conditions.equipmentCondition)~iri]
+      - [reo:cat, reo:$(tenantPreferences.cats)~iri]
+      - [reo:dog, reo:$(tenantPreferences.dogs)~iri]
+      - [reo:otherPet, reo:$(tenantPreferences.petAllowed)~iri]
+      - [reo:commercialUse, reo:$(tenantPreferences.commercialUse)~iri]
+      - [reo:livingCommunity, reo:$(tenantPreferences.livingCommunity)~iri]
+      - [reo:smoking, reo:$(tenantPreferences.smoking)~iri]
+      - [reo:maxHouseholdPersons, $(tenantPreferences.maxHouseholdPersons), xsd:int]
+      - [reo:minIncome, $(tenantPreferences.minIncome.amount), xsd:double]
+      - p: reo:address
+        o:
+         - mapping: address
+      - p: reo:contact
+        o:
+         - mapping: contactPerson
+      - p: reo:energyPass
+        o:
+         - mapping: energyPass
+  
+  address:
+    sources: realEstateList
+    s: ex:$(publicId)_address
+    po:
+      - [a, reo:Address]
+      - [reo:street, $(address.street)]
+      - [reo:houseNumber, $(address.streetNumber), xsd:int]
+      - [reo:zipCode, $(address.zipcode), xsd:int]
+      - [reo:city, $(address.city)]
+      - [reo:countryCode, $(address.countryCode)]
+    
+  contactPerson:
+    sources: realEstateList
+    s: ex:$(publicId)_contactPerson
+    po:
+      - [a, reo:ContactPerson]
+      - [reo:contactType, reo:$(caretakerContact.title)~iri]
+      - [reo:notAvailable, $(caretakerContact.notAvailable), xsd:boolean]
+      - [reo:email, $(caretakerContact.email)]
+      - [reo:phoneNumber, $(caretakerContact.phoneNumber)]
+      
+  
+  energyPass:
+    sources: realEstateList
+    s: ex:$(publicId)_energyPass
+    po:
+      - [a, reo:EnergyPass]
+      - [reo:energyPassType, reo:$(energyPass.energyPassType)~iri]
+      - [reo:energyPassPresentType, reo:$(energyPass.energyPresentType)~iri]
+      - [reo:energyCarrier, reo:$(energyPass.energyCarrier)~iri]
+      - [reo:heatingType, reo:$(energyPass.heatingType)~iri]
+      - [reo:energyEfficiencyClass, reo:$(energyPass.energyEfficiencyCategory)~iri]
+
+
+      
+      
+      
+      
+      
+      

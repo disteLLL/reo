@@ -67,6 +67,16 @@ reo:condition rdf:type owl:ObjectProperty ;
               rdfs:label "Zustand"@de .
 
 
+###  https://www.w3id.org/def/reo#contact
+reo:contact rdf:type owl:ObjectProperty ;
+            rdfs:label "Kontakt"@de .
+
+
+###  https://www.w3id.org/def/reo#contactType
+reo:contactType rdf:type owl:ObjectProperty ;
+                rdfs:label "Kontakttyp"@de .
+
+
 ###  https://www.w3id.org/def/reo#dog
 reo:dog rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf reo:tenantGuidelines ;
@@ -88,8 +98,13 @@ reo:energyPass rdf:type owl:ObjectProperty ;
                rdfs:label "Energieausweis"@de .
 
 
-###  https://www.w3id.org/def/reo#energypassType
-reo:energypassType rdf:type owl:ObjectProperty ;
+###  https://www.w3id.org/def/reo#energyPassPresentType
+reo:energyPassPresentType rdf:type owl:ObjectProperty ;
+                          rdfs:label "Vorhandensein des Energieausweises"@de .
+
+
+###  https://www.w3id.org/def/reo#energyPassType
+reo:energyPassType rdf:type owl:ObjectProperty ;
                    rdfs:label "Energieausweistyp"@de .
 
 
@@ -101,6 +116,11 @@ reo:equipmentCondition rdf:type owl:ObjectProperty ;
 ###  https://www.w3id.org/def/reo#heatingType
 reo:heatingType rdf:type owl:ObjectProperty ;
                 rdfs:label "Heizungstyp"@de .
+
+
+###  https://www.w3id.org/def/reo#houseType
+reo:houseType rdf:type owl:ObjectProperty ;
+              rdfs:label "Haustyp"@de .
 
 
 ###  https://www.w3id.org/def/reo#livingCommunity
@@ -211,13 +231,20 @@ reo:floorCount rdf:type owl:DatatypeProperty ;
 
 ###  https://www.w3id.org/def/reo#hasBalcony
 reo:hasBalcony rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:boolean .
+               rdfs:range xsd:boolean ;
+               rdfs:label "hat Balkon"@de .
 
 
 ###  https://www.w3id.org/def/reo#hasCellar
 reo:hasCellar rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:boolean ;
               rdfs:label "hat Keller"@de .
+
+
+###  https://www.w3id.org/def/reo#hasElevator
+reo:hasElevator rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "hat Fahrstuhl"@de .
 
 
 ###  https://www.w3id.org/def/reo#hasFittedKitchen
@@ -231,6 +258,12 @@ reo:hasGarden rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:range xsd:boolean ;
               rdfs:label "hat Garten"@de .
+
+
+###  https://www.w3id.org/def/reo#hasGuestToilet
+reo:hasGuestToilet rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:label "hat Gästetoilette"@de .
 
 
 ###  https://www.w3id.org/def/reo#hasWashingMachineConnection
@@ -281,6 +314,12 @@ reo:modernizationYear rdf:type owl:DatatypeProperty ;
 reo:netRent rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf reo:cost ;
             rdfs:label "Nettokaltmiete"@de .
+
+
+###  https://www.w3id.org/def/reo#notAvailable
+reo:notAvailable rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:label "nicht verfügbar"@de .
 
 
 ###  https://www.w3id.org/def/reo#numberOf
@@ -408,26 +447,42 @@ reo:CarSpace rdf:type owl:Class ;
              rdfs:label "Stellplatz"@de .
 
 
-###  https://www.w3id.org/def/reo#CaretakerContact
-reo:CaretakerContact rdf:type owl:Class ;
-                     rdfs:subClassOf reo:AbstractFeature ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty reo:email ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onDataRange xsd:string
-                                     ] ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty reo:phoneNumber ;
-                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                       owl:onDataRange xsd:string
-                                     ] ;
-                     rdfs:label "Ansprechpartner"@de .
-
-
 ###  https://www.w3id.org/def/reo#Condition
 reo:Condition rdf:type owl:Class ;
               rdfs:subClassOf reo:AbstractFeature ;
               rdfs:label "Zustand"@de .
+
+
+###  https://www.w3id.org/def/reo#ContactPerson
+reo:ContactPerson rdf:type owl:Class ;
+                  rdfs:subClassOf reo:AbstractFeature ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty reo:contactType ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass reo:ContactPersonType
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty reo:notAvailable ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:boolean
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty reo:email ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty reo:phoneNumber ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:string
+                                  ] ;
+                  rdfs:label "Ansprechpartner"@de .
+
+
+###  https://www.w3id.org/def/reo#ContactPersonType
+reo:ContactPersonType rdf:type owl:Class ;
+                      rdfs:subClassOf reo:Type ;
+                      rdfs:label "Kontakt"@de .
 
 
 ###  https://www.w3id.org/def/reo#EnergyCarrier
@@ -459,16 +514,26 @@ reo:EnergyPass rdf:type owl:Class ;
                                  owl:onClass reo:EnergyEfficiencyClass
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty reo:energypassType ;
+                                 owl:onProperty reo:energyPassPresentType ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:EnergyPassPresentType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:energyPassType ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass reo:EnergyPassType
                                ] ;
                rdfs:label "Energieausweis"@de .
 
 
+###  https://www.w3id.org/def/reo#EnergyPassPresentType
+reo:EnergyPassPresentType rdf:type owl:Class ;
+                          rdfs:subClassOf reo:Type .
+
+
 ###  https://www.w3id.org/def/reo#EnergyPassType
 reo:EnergyPassType rdf:type owl:Class ;
-                   rdfs:subClassOf reo:AbstractFeature ;
+                   rdfs:subClassOf reo:Type ;
                    rdfs:label "Energieausweistyp"@de .
 
 
@@ -485,8 +550,13 @@ reo:Feature rdf:type owl:Class ;
 
 ###  https://www.w3id.org/def/reo#HeatingType
 reo:HeatingType rdf:type owl:Class ;
-                rdfs:subClassOf reo:AbstractFeature ;
+                rdfs:subClassOf reo:Type ;
                 rdfs:label "Heizungstyp"@de .
+
+
+###  https://www.w3id.org/def/reo#HouseType
+reo:HouseType rdf:type owl:Class ;
+              rdfs:subClassOf reo:Type .
 
 
 ###  https://www.w3id.org/def/reo#MarketingType
@@ -504,6 +574,19 @@ reo:PhysicalFeature rdf:type owl:Class ;
 ###  https://www.w3id.org/def/reo#RealEstate
 reo:RealEstate rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Class ;
+                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty reo:apartmentType ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass reo:ApartmentType
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty reo:houseType ;
+                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                 owl:onClass reo:HouseType
+                                               ]
+                                             )
+                               ] ,
+                               [ rdf:type owl:Class ;
                                  owl:unionOf ( [ rdf:type owl:Restriction ;
                                                  owl:onProperty reo:netRent ;
                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -526,11 +609,6 @@ reo:RealEstate rdf:type owl:Class ;
                                  owl:onClass reo:Address
                                ] ,
                                [ rdf:type owl:Restriction ;
-                                 owl:onProperty reo:apartmentType ;
-                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                 owl:onClass reo:ApartmentType
-                               ] ,
-                               [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:marketingType ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass reo:MarketingType
@@ -544,6 +622,11 @@ reo:RealEstate rdf:type owl:Class ;
                                  owl:onProperty reo:usageType ;
                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onClass reo:UsageType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:contact ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass reo:ContactPerson
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:energyPass ;
@@ -601,12 +684,22 @@ reo:RealEstate rdf:type owl:Class ;
                                  owl:onDataRange xsd:boolean
                                ] ,
                                [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasElevator ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:hasFittedKitchen ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:boolean
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:hasGarden ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasGuestToilet ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:boolean
                                ] ,
@@ -727,7 +820,7 @@ reo:CARBON rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#CARETAKER
 reo:CARETAKER rdf:type owl:NamedIndividual ,
-                       reo:CaretakerContact ;
+                       reo:ContactPersonType ;
               rdfs:label "Hausmeister"@de .
 
 
@@ -757,7 +850,7 @@ reo:COGENERATIONUNIT rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#COMPANY
 reo:COMPANY rdf:type owl:NamedIndividual ,
-                     reo:CaretakerContact ;
+                     reo:ContactPersonType ;
             rdfs:label "Firma"@de .
 
 
@@ -991,13 +1084,13 @@ reo:NOT_ALLOWED rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#NOT_NEEDED
 reo:NOT_NEEDED rdf:type owl:NamedIndividual ,
-                        reo:EnergyPass ;
+                        reo:EnergyPassPresentType ;
                rdfs:label "nicht benötigt"@de .
 
 
 ###  https://www.w3id.org/def/reo#NOT_PRESENT
 reo:NOT_PRESENT rdf:type owl:NamedIndividual ,
-                         reo:EnergyPass ;
+                         reo:EnergyPassPresentType ;
                 rdfs:label "nicht vorhanden"@de .
 
 
@@ -1015,7 +1108,7 @@ reo:OIL rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#OLD_TENANT
 reo:OLD_TENANT rdf:type owl:NamedIndividual ,
-                        reo:CaretakerContact ;
+                        reo:ContactPersonType ;
                rdfs:label "Altmieter"@de .
 
 
@@ -1045,7 +1138,7 @@ reo:PENTHOUSE rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#PRESENT
 reo:PRESENT rdf:type owl:NamedIndividual ,
-                     reo:EnergyPass ;
+                     reo:EnergyPassPresentType ;
             rdfs:label "vorhanden"@de .
 
 
@@ -1145,14 +1238,12 @@ reo:UPPER rdf:type owl:NamedIndividual ,
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( reo:Address
-                reo:CaretakerContact
                 reo:Condition
+                reo:ContactPerson
                 reo:EnergyCarrier
                 reo:EnergyEfficiencyClass
                 reo:EnergyPass
-                reo:EnergyPassType
                 reo:EquipmentCondition
-                reo:HeatingType
                 reo:TenantGuidelines
               )
 ] .
@@ -1160,18 +1251,14 @@ reo:UPPER rdf:type owl:NamedIndividual ,
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( reo:ApartmentType
+                reo:ContactPersonType
+                reo:EnergyPassPresentType
+                reo:EnergyPassType
+                reo:HeatingType
+                reo:HouseType
                 reo:MarketingType
                 reo:RealEstateType
                 reo:UsageType
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( reo:EnergyCarrier
-                reo:EnergyEfficiencyClass
-                reo:EnergyPassType
-                reo:HeatingType
               )
 ] .
 
