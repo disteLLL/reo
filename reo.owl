@@ -209,6 +209,11 @@ reo:floorCount rdf:type owl:DatatypeProperty ;
                rdfs:label "Anzahl der Stockwerke"@de .
 
 
+###  https://www.w3id.org/def/reo#hasBalcony
+reo:hasBalcony rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:boolean .
+
+
 ###  https://www.w3id.org/def/reo#hasCellar
 reo:hasCellar rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:boolean ;
@@ -584,6 +589,11 @@ reo:RealEstate rdf:type owl:Class ;
                                  owl:onProperty reo:floorCount ;
                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:int
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty reo:hasBalcony ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:boolean
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:hasCellar ;
