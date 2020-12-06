@@ -82,7 +82,6 @@ mappings:
       - [reo:email, $(caretakerContact.email)]
       - [reo:phoneNumber, $(caretakerContact.phoneNumber)]
       
-  
   energyPass:
     sources: realEstateList
     s: ex:$(publicId)_energyPass
@@ -93,11 +92,3 @@ mappings:
       - [reo:energyCarrier, reo:$(energyPass.energyCarrier)~iri]
       - [reo:heatingType, reo:$(energyPass.heatingType)~iri]
       - [reo:energyEfficiencyClass, reo:$(energyPass.energyEfficiencyCategory)~iri]
-
-
-      
-      
-      
-      
-      
-      
