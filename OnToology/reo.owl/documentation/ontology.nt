@@ -464,6 +464,7 @@ _:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#
 # https://www.w3id.org/def/reo#EnergyPassPresentType
 <https://www.w3id.org/def/reo#EnergyPassPresentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.w3id.org/def/reo#EnergyPassPresentType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#EnergyPassPresentType> <http://www.w3.org/2000/01/rdf-schema#label> "Vorhandensein des Energieausweises"@de .
 # 
 # https://www.w3id.org/def/reo#EnergyPassType
 <https://www.w3id.org/def/reo#EnergyPassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -487,6 +488,7 @@ _:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#
 # https://www.w3id.org/def/reo#HouseType
 <https://www.w3id.org/def/reo#HouseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.w3id.org/def/reo#HouseType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
+<https://www.w3id.org/def/reo#HouseType> <http://www.w3.org/2000/01/rdf-schema#label> "Haustyp"@de .
 # 
 # https://www.w3id.org/def/reo#MarketingType
 <https://www.w3id.org/def/reo#MarketingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -733,6 +735,11 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
 <https://www.w3id.org/def/reo#B> <http://www.w3.org/2000/01/rdf-schema#label> "B"@de .
 # 
+# https://www.w3id.org/def/reo#BUNGALOW
+<https://www.w3id.org/def/reo#BUNGALOW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#BUNGALOW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#BUNGALOW> <http://www.w3.org/2000/01/rdf-schema#label> "Bungalow"@de .
+# 
 # https://www.w3id.org/def/reo#C
 <https://www.w3id.org/def/reo#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#C> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
@@ -757,6 +764,11 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#CarSpace> .
 <https://www.w3id.org/def/reo#CARPORT> <http://www.w3.org/2000/01/rdf-schema#label> "Carport"@de .
+# 
+# https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE
+<https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Burg/Schloss"@de .
 # 
 # https://www.w3id.org/def/reo#CENTRAL
 <https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -838,10 +850,20 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#ELETRICITY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
 <https://www.w3id.org/def/reo#ELETRICITY> <http://www.w3.org/2000/01/rdf-schema#label> "Strom"@de .
 # 
+# https://www.w3id.org/def/reo#END_TERRACE_HOUSE
+<https://www.w3id.org/def/reo#END_TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#END_TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#END_TERRACE_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Reihenendhaus"@de .
+# 
 # https://www.w3id.org/def/reo#F
 <https://www.w3id.org/def/reo#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#F> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
 <https://www.w3id.org/def/reo#F> <http://www.w3.org/2000/01/rdf-schema#label> "F"@de .
+# 
+# https://www.w3id.org/def/reo#FARMHOUSE
+<https://www.w3id.org/def/reo#FARMHOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#FARMHOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#FARMHOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Bauernhaus"@de .
 # 
 # https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED
 <https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -937,6 +959,16 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
 <https://www.w3id.org/def/reo#MAISONETTE> <http://www.w3.org/2000/01/rdf-schema#label> "Maisonette"@de .
+# 
+# https://www.w3id.org/def/reo#MID_TERRACE_HOUSE
+<https://www.w3id.org/def/reo#MID_TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#MID_TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#MID_TERRACE_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Reihenmittelhaus"@de .
+# 
+# https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE
+<https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Mehrfamilienhaus"@de .
 # 
 # https://www.w3id.org/def/reo#NEAT
 <https://www.w3id.org/def/reo#NEAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1043,15 +1075,30 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
 <https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/2000/01/rdf-schema#label> "Etagenheizung"@de .
 # 
+# https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE
+<https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Doppelhaushälfte"@de .
+# 
 # https://www.w3id.org/def/reo#SIMPLE
 <https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
 <https://www.w3id.org/def/reo#SIMPLE> <http://www.w3.org/2000/01/rdf-schema#label> "einfach"@de .
 # 
+# https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE
+<https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Einfamilienhaus"@de .
+# 
 # https://www.w3id.org/def/reo#SOLAR
 <https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EnergyCarrier> .
 <https://www.w3id.org/def/reo#SOLAR> <http://www.w3.org/2000/01/rdf-schema#label> "Solar"@de .
+# 
+# https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE
+<https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE> <http://www.w3.org/2000/01/rdf-schema#label> "Besondere Immobilie"@de .
 # 
 # https://www.w3id.org/def/reo#STOVE
 <https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1073,6 +1120,11 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#TERRACED_FLAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#ApartmentType> .
 <https://www.w3id.org/def/reo#TERRACED_FLAT> <http://www.w3.org/2000/01/rdf-schema#label> "Terrassenwohnung"@de .
 # 
+# https://www.w3id.org/def/reo#TERRACE_HOUSE
+<https://www.w3id.org/def/reo#TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#TERRACE_HOUSE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#TERRACE_HOUSE> <http://www.w3.org/2000/01/rdf-schema#label> "Reihenhaus"@de .
+# 
 # https://www.w3id.org/def/reo#UNDERFLOOR
 <https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
@@ -1087,6 +1139,11 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 <https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#EquipmentCondition> .
 <https://www.w3id.org/def/reo#UPPER> <http://www.w3.org/2000/01/rdf-schema#label> "gehoben"@de .
+# 
+# https://www.w3id.org/def/reo#VILLA
+<https://www.w3id.org/def/reo#VILLA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3id.org/def/reo#VILLA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HouseType> .
+<https://www.w3id.org/def/reo#VILLA> <http://www.w3.org/2000/01/rdf-schema#label> "Villa"@de .
 # 
 # 
 # 
