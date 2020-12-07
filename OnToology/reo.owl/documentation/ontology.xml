@@ -881,6 +881,7 @@
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#EnergyPassPresentType">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
+        <rdfs:label xml:lang="de">Vorhandensein des Energieausweises</rdfs:label>
     </owl:Class>
     
 
@@ -929,6 +930,7 @@
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#HouseType">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
+        <rdfs:label xml:lang="de">Haustyp</rdfs:label>
     </owl:Class>
     
 
@@ -1306,6 +1308,16 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#BUNGALOW -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#BUNGALOW">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Bungalow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.w3id.org/def/reo#C -->
 
 
@@ -1352,6 +1364,16 @@
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#CARPORT">
         <rdf:type rdf:resource="https://www.w3id.org/def/reo#CarSpace"/>
         <rdfs:label xml:lang="de">Carport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Burg/Schloss</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1516,12 +1538,32 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#END_TERRACE_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#END_TERRACE_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Reihenendhaus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.w3id.org/def/reo#F -->
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#F">
         <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyEfficiencyClass"/>
         <rdfs:label xml:lang="de">F</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#FARMHOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#FARMHOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Bauernhaus</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1712,6 +1754,26 @@
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#MAISONETTE">
         <rdf:type rdf:resource="https://www.w3id.org/def/reo#ApartmentType"/>
         <rdfs:label xml:lang="de">Maisonette</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#MID_TERRACE_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#MID_TERRACE_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Reihenmittelhaus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Mehrfamilienhaus</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1926,6 +1988,16 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Doppelhaushälfte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.w3id.org/def/reo#SIMPLE -->
 
 
@@ -1936,12 +2008,32 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Einfamilienhaus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.w3id.org/def/reo#SOLAR -->
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#SOLAR">
         <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyCarrier"/>
         <rdfs:label xml:lang="de">Solar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Besondere Immobilie</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1986,6 +2078,16 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#TERRACE_HOUSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#TERRACE_HOUSE">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Reihenhaus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.w3id.org/def/reo#UNDERFLOOR -->
 
 
@@ -2012,6 +2114,16 @@
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#UPPER">
         <rdf:type rdf:resource="https://www.w3id.org/def/reo#EquipmentCondition"/>
         <rdfs:label xml:lang="de">gehoben</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#VILLA -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#VILLA">
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <rdfs:label xml:lang="de">Villa</rdfs:label>
     </owl:NamedIndividual>
     
 

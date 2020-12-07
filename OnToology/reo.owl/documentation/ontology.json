@@ -766,6 +766,13 @@
     "@value" : "B"
   } ]
 }, {
+  "@id" : "https://www.w3id.org/def/reo#BUNGALOW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bungalow"
+  } ]
+}, {
   "@id" : "https://www.w3id.org/def/reo#C",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#EnergyEfficiencyClass" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -799,6 +806,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Carport"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Burg/Schloss"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#CENTRAL",
@@ -961,6 +975,13 @@
     "@value" : "Strom"
   } ]
 }, {
+  "@id" : "https://www.w3id.org/def/reo#END_TERRACE_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Reihenendhaus"
+  } ]
+}, {
   "@id" : "https://www.w3id.org/def/reo#EnergyCarrier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1003,6 +1024,10 @@
 }, {
   "@id" : "https://www.w3id.org/def/reo#EnergyPassPresentType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Vorhandensein des Energieausweises"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/def/reo#Type"
   } ]
@@ -1032,6 +1057,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "F"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#FARMHOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bauernhaus"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED",
@@ -1151,6 +1183,10 @@
 }, {
   "@id" : "https://www.w3id.org/def/reo#HouseType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Haustyp"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/def/reo#Type"
   } ]
@@ -1188,6 +1224,20 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Maisonette"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#MID_TERRACE_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Reihenmittelhaus"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Mehrfamilienhaus"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#MarketingType",
@@ -1431,6 +1481,13 @@
     "@value" : "Etagenheizung"
   } ]
 }, {
+  "@id" : "https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Doppelhaushälfte"
+  } ]
+}, {
   "@id" : "https://www.w3id.org/def/reo#SIMPLE",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#EquipmentCondition" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1438,11 +1495,25 @@
     "@value" : "einfach"
   } ]
 }, {
+  "@id" : "https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Einfamilienhaus"
+  } ]
+}, {
   "@id" : "https://www.w3id.org/def/reo#SOLAR",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#EnergyCarrier" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Solar"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Besondere Immobilie"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#STOVE",
@@ -1471,6 +1542,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Terrassenwohnung"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#TERRACE_HOUSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Reihenhaus"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#TenantGuidelines",
@@ -1519,6 +1597,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/def/reo#Type"
+  } ]
+}, {
+  "@id" : "https://www.w3id.org/def/reo#VILLA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HouseType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Villa"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#additionalCost",
