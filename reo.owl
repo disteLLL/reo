@@ -528,7 +528,8 @@ reo:EnergyPass rdf:type owl:Class ;
 
 ###  https://www.w3id.org/def/reo#EnergyPassPresentType
 reo:EnergyPassPresentType rdf:type owl:Class ;
-                          rdfs:subClassOf reo:Type .
+                          rdfs:subClassOf reo:Type ;
+                          rdfs:label "Vorhandensein des Energieausweises"@de .
 
 
 ###  https://www.w3id.org/def/reo#EnergyPassType
@@ -556,7 +557,8 @@ reo:HeatingType rdf:type owl:Class ;
 
 ###  https://www.w3id.org/def/reo#HouseType
 reo:HouseType rdf:type owl:Class ;
-              rdfs:subClassOf reo:Type .
+              rdfs:subClassOf reo:Type ;
+              rdfs:label "Haustyp"@de .
 
 
 ###  https://www.w3id.org/def/reo#MarketingType
