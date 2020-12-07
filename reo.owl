@@ -806,6 +806,12 @@ reo:B rdf:type owl:NamedIndividual ,
       rdfs:label "B"@de .
 
 
+###  https://www.w3id.org/def/reo#BUNGALOW
+reo:BUNGALOW rdf:type owl:NamedIndividual ,
+                      reo:HouseType ;
+             rdfs:label "Bungalow"@de .
+
+
 ###  https://www.w3id.org/def/reo#C
 reo:C rdf:type owl:NamedIndividual ,
                reo:EnergyEfficiencyClass ;
@@ -834,6 +840,12 @@ reo:CARPARK rdf:type owl:NamedIndividual ,
 reo:CARPORT rdf:type owl:NamedIndividual ,
                      reo:CarSpace ;
             rdfs:label "Carport"@de .
+
+
+###  https://www.w3id.org/def/reo#CASTLE_MANOR_HOUSE
+reo:CASTLE_MANOR_HOUSE rdf:type owl:NamedIndividual ,
+                                reo:HouseType ;
+                       rdfs:label "Burg/Schloss"@de .
 
 
 ###  https://www.w3id.org/def/reo#CENTRAL
@@ -932,10 +944,22 @@ reo:ELETRICITY rdf:type owl:NamedIndividual ,
                rdfs:label "Strom"@de .
 
 
+###  https://www.w3id.org/def/reo#END_TERRACE_HOUSE
+reo:END_TERRACE_HOUSE rdf:type owl:NamedIndividual ,
+                               reo:HouseType ;
+                      rdfs:label "Reihenendhaus"@de .
+
+
 ###  https://www.w3id.org/def/reo#F
 reo:F rdf:type owl:NamedIndividual ,
                reo:EnergyEfficiencyClass ;
       rdfs:label "F"@de .
+
+
+###  https://www.w3id.org/def/reo#FARMHOUSE
+reo:FARMHOUSE rdf:type owl:NamedIndividual ,
+                       reo:HouseType ;
+              rdfs:label "Bauernhaus"@de .
 
 
 ###  https://www.w3id.org/def/reo#FIRSTAFTERREFURBISHED
@@ -1050,6 +1074,18 @@ reo:LUXARY rdf:type owl:NamedIndividual ,
 reo:MAISONETTE rdf:type owl:NamedIndividual ,
                         reo:ApartmentType ;
                rdfs:label "Maisonette"@de .
+
+
+###  https://www.w3id.org/def/reo#MID_TERRACE_HOUSE
+reo:MID_TERRACE_HOUSE rdf:type owl:NamedIndividual ,
+                               reo:HouseType ;
+                      rdfs:label "Reihenmittelhaus"@de .
+
+
+###  https://www.w3id.org/def/reo#MULTI_FAMILY_HOUSE
+reo:MULTI_FAMILY_HOUSE rdf:type owl:NamedIndividual ,
+                                reo:HouseType ;
+                       rdfs:label "Mehrfamilienhaus"@de .
 
 
 ###  https://www.w3id.org/def/reo#NEAT
@@ -1178,16 +1214,34 @@ reo:SELF_CONTAINED rdf:type owl:NamedIndividual ,
                    rdfs:label "Etagenheizung"@de .
 
 
+###  https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE
+reo:SEMIDETACHED_HOUSE rdf:type owl:NamedIndividual ,
+                                reo:HouseType ;
+                       rdfs:label "Doppelhaushälfte"@de .
+
+
 ###  https://www.w3id.org/def/reo#SIMPLE
 reo:SIMPLE rdf:type owl:NamedIndividual ,
                     reo:EquipmentCondition ;
            rdfs:label "einfach"@de .
 
 
+###  https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE
+reo:SINGLE_FAMILY_HOUSE rdf:type owl:NamedIndividual ,
+                                 reo:HouseType ;
+                        rdfs:label "Einfamilienhaus"@de .
+
+
 ###  https://www.w3id.org/def/reo#SOLAR
 reo:SOLAR rdf:type owl:NamedIndividual ,
                    reo:EnergyCarrier ;
           rdfs:label "Solar"@de .
+
+
+###  https://www.w3id.org/def/reo#SPECIAL_REAL_ESTATE
+reo:SPECIAL_REAL_ESTATE rdf:type owl:NamedIndividual ,
+                                 reo:HouseType ;
+                        rdfs:label "Besondere Immobilie"@de .
 
 
 ###  https://www.w3id.org/def/reo#STOVE
@@ -1214,6 +1268,12 @@ reo:TERRACED_FLAT rdf:type owl:NamedIndividual ,
                   rdfs:label "Terrassenwohnung"@de .
 
 
+###  https://www.w3id.org/def/reo#TERRACE_HOUSE
+reo:TERRACE_HOUSE rdf:type owl:NamedIndividual ,
+                           reo:HouseType ;
+                  rdfs:label "Reihenhaus"@de .
+
+
 ###  https://www.w3id.org/def/reo#UNDERFLOOR
 reo:UNDERFLOOR rdf:type owl:NamedIndividual ,
                         reo:HeatingType ;
@@ -1230,6 +1290,12 @@ reo:UNDERGROUND rdf:type owl:NamedIndividual ,
 reo:UPPER rdf:type owl:NamedIndividual ,
                    reo:EquipmentCondition ;
           rdfs:label "gehoben"@de .
+
+
+###  https://www.w3id.org/def/reo#VILLA
+reo:VILLA rdf:type owl:NamedIndividual ,
+                   reo:HouseType ;
+          rdfs:label "Villa"@de .
 
 
 #################################################################
