@@ -14,7 +14,7 @@
                                 terms:licence <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                 terms:title "Real Estate Ontology" ;
                                 rdfs:comment "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." ;
-                                owl:versionInfo "0.0.1" .
+                                owl:versionInfo "0.0.2" .
 
 #################################################################
 #    Annotation properties

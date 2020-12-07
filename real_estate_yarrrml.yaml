@@ -1,6 +1,7 @@
 prefixes:
   ex: http://example.com/
   reo: https://www.w3id.org/def/reo#
+  xsd: http://www.w3.org/2001/XMLSchema#
   
 sources:
   realEstateList:
@@ -20,25 +21,23 @@ mappings:
       - [reo:apartmentType, reo:$(apartmentType)~iri]
       - [reo:houseType, reo:$(houseType)~iri]
       - [reo:usageType, reo:$(usageType)~iri]
-      - [reo:livingSpace, $(allocation.livingSpace), xsd:double]
+      - [reo:livingSpace, $(allocation.livingSpace), xsd:float]
       - [reo:numberOfRooms, $(allocation.rooms), xsd:int]
       - [reo:numberOfBedrooms, $(allocation.bedroomCount), xsd:int]
       - [reo:numberOfBathrooms, $(allocation.bathroomCount), xsd:int]
       - [reo:floor, $(allocation.floor), xsd:int]
       - [reo:floorCount, $(allocation.floorCount), xsd:int]
       - [reo:hasGarden, $(allocation.garden), xsd:boolean]
-      - [reo:hasElevator, $(allocation.elevator), xsd:boolean]
-      - [reo:hasGuestToilet, $(allocation.guestToilet), xsd:boolean]
       - [reo:hasFittedKitchen, $(allocation.kitchen), xsd:boolean]
       - [reo:hasBalcony, $(allocation.balcony), xsd:boolean]
       - [reo:hasCellar, $(allocation.cellar), xsd:boolean]
       - [reo:hasWashingMachineConnection, $(allocation.washingmachine), xsd:boolean]
-      - [reo:netRent, $(costs.rentNet.amount), xsd:double]
-      - [reo:bail, $(costs.bailCosts.amount), xsd:double]
-      - [reo:additionalCost, $(costs.additionalCost.amount), xsd:double]
-      - [reo:carspaceCost, $(costs.carspaceCosts.amount), xsd:double]
-      - [reo:purchasePrice, $(costs.buyCost.amount), xsd:double]
-      - [reo:heatingCost, $(costs.heatingCost.amount), xsd:double]
+      - [reo:netRent, $(costs.rentNet.amount), xsd:float]
+      - [reo:bail, $(costs.bailCosts.amount), xsd:float]
+      - [reo:additionalCost, $(costs.additionalCost.amount), xsd:float]
+      - [reo:carspaceCost, $(costs.carspaceCosts.amount), xsd:float]
+      - [reo:purchasePrice, $(costs.buyCost.amount), xsd:float]
+      - [reo:heatingCost, $(costs.heatingCost.amount), xsd:float]
       - [reo:constructionYear, $(stats.buildYear), xsd:int]
       - [reo:modernizationYear, $(stats.modernizationYear), xsd:int]
       - [reo:condition, reo:$(conditions.condition)~iri]
@@ -50,16 +49,31 @@ mappings:
       - [reo:livingCommunity, reo:$(tenantPreferences.livingCommunity)~iri]
       - [reo:smoking, reo:$(tenantPreferences.smoking)~iri]
       - [reo:maxHouseholdPersons, $(tenantPreferences.maxHouseholdPersons), xsd:int]
-      - [reo:minIncome, $(tenantPreferences.minIncome.amount), xsd:double]
+      - [reo:minIncome, $(tenantPreferences.minIncome.amount), xsd:float]
       - p: reo:address
         o:
-         - mapping: address
+          mapping: address
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(publicId)]
+              - [str2, $(publicId)]
       - p: reo:contact
         o:
-         - mapping: contactPerson
+          mapping: contactPerson
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(publicId)]
+              - [str2, $(publicId)]
       - p: reo:energyPass
         o:
-         - mapping: energyPass
+          mapping: energyPass
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(publicId)]
+              - [str2, $(publicId)]
   
   address:
     sources: realEstateList
