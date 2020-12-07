@@ -13,7 +13,7 @@
         <terms:licence rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:title>Real Estate Ontology</terms:title>
         <rdfs:comment>This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass).</rdfs:comment>
-        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <owl:versionInfo>0.0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -117,6 +117,24 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#contact -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#contact">
+        <rdfs:label xml:lang="de">Kontakt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#contactType -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#contactType">
+        <rdfs:label xml:lang="de">Kontakttyp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://www.w3id.org/def/reo#dog -->
 
 
@@ -154,10 +172,19 @@
     
 
 
-    <!-- https://www.w3id.org/def/reo#energypassType -->
+    <!-- https://www.w3id.org/def/reo#energyPassPresentType -->
 
 
-    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#energypassType">
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#energyPassPresentType">
+        <rdfs:label xml:lang="de">Vorhandensein des Energieausweises</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#energyPassType -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#energyPassType">
         <rdfs:label xml:lang="de">Energieausweistyp</rdfs:label>
     </owl:ObjectProperty>
     
@@ -177,6 +204,15 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#heatingType">
         <rdfs:label xml:lang="de">Heizungstyp</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#houseType -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.w3id.org/def/reo#houseType">
+        <rdfs:label xml:lang="de">Haustyp</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -332,6 +368,15 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#email -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#email">
+        <rdfs:label xml:lang="de">E-Mail-Adresse</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.w3id.org/def/reo#floor -->
 
 
@@ -354,12 +399,32 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#hasBalcony -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#hasBalcony">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="de">hat Balkon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.w3id.org/def/reo#hasCellar -->
 
 
     <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#hasCellar">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="de">hat Keller</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#hasElevator -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#hasElevator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="de">hat Fahrstuhl</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -381,6 +446,16 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label xml:lang="de">hat Garten</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#hasGuestToilet -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#hasGuestToilet">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="de">hat Gästetoilette</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -437,6 +512,15 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#minIncome -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#minIncome">
+        <rdfs:label xml:lang="de">Mindesteinkommen</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://www.w3id.org/def/reo#modernizationYear -->
 
 
@@ -454,6 +538,16 @@
     <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#netRent">
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/def/reo#cost"/>
         <rdfs:label xml:lang="de">Nettokaltmiete</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#notAvailable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#notAvailable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="de">nicht verfügbar</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -507,6 +601,15 @@
         <rdfs:subPropertyOf rdf:resource="https://www.w3id.org/def/reo#numberOf"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:label xml:lang="de">Anzahl der Zimmer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#phoneNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.w3id.org/def/reo#phoneNumber">
+        <rdfs:label xml:lang="de">Telefonnummer</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -652,22 +755,60 @@
     
 
 
-    <!-- https://www.w3id.org/def/reo#CaretakerContact -->
-
-
-    <owl:Class rdf:about="https://www.w3id.org/def/reo#CaretakerContact">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#AbstractFeature"/>
-        <rdfs:label xml:lang="de">Ansprechpartner</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://www.w3id.org/def/reo#Condition -->
 
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#Condition">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#AbstractFeature"/>
         <rdfs:label xml:lang="de">Zustand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#ContactPerson -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/def/reo#ContactPerson">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#AbstractFeature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#contactType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/def/reo#ContactPersonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#notAvailable"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#email"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#phoneNumber"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="de">Ansprechpartner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#ContactPersonType -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/def/reo#ContactPersonType">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
+        <rdfs:label xml:lang="de">Kontakt</rdfs:label>
     </owl:Class>
     
 
@@ -718,7 +859,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#energypassType"/>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#energyPassPresentType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#energyPassType"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="https://www.w3id.org/def/reo#EnergyPassType"/>
             </owl:Restriction>
@@ -728,11 +876,20 @@
     
 
 
+    <!-- https://www.w3id.org/def/reo#EnergyPassPresentType -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/def/reo#EnergyPassPresentType">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
+    </owl:Class>
+    
+
+
     <!-- https://www.w3id.org/def/reo#EnergyPassType -->
 
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#EnergyPassType">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#AbstractFeature"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
         <rdfs:label xml:lang="de">Energieausweistyp</rdfs:label>
     </owl:Class>
     
@@ -761,8 +918,17 @@
 
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#HeatingType">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#AbstractFeature"/>
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
         <rdfs:label xml:lang="de">Heizungstyp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3id.org/def/reo#HouseType -->
+
+
+    <owl:Class rdf:about="https://www.w3id.org/def/reo#HouseType">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
     </owl:Class>
     
 
@@ -795,6 +961,22 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#apartmentType"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://www.w3id.org/def/reo#ApartmentType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#houseType"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#netRent"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -822,13 +1004,6 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#apartmentType"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="https://www.w3id.org/def/reo#ApartmentType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#marketingType"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://www.w3id.org/def/reo#MarketingType"/>
@@ -846,6 +1021,13 @@
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#usageType"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://www.w3id.org/def/reo#UsageType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#contact"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.w3id.org/def/reo#ContactPerson"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -913,7 +1095,21 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#hasBalcony"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#hasCellar"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#hasElevator"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -928,6 +1124,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#hasGarden"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#hasGuestToilet"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
@@ -951,6 +1154,13 @@
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#maxHouseholdPersons"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#minIncome"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1120,7 +1330,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#CARETAKER">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#CaretakerContact"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#ContactPersonType"/>
         <rdfs:label xml:lang="de">Hausmeister</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1170,7 +1380,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#COMPANY">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#CaretakerContact"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#ContactPersonType"/>
         <rdfs:label xml:lang="de">Firma</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1560,7 +1770,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#NOT_NEEDED">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPass"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
         <rdfs:label xml:lang="de">nicht benötigt</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1570,7 +1780,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#NOT_PRESENT">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPass"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
         <rdfs:label xml:lang="de">nicht vorhanden</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1600,7 +1810,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#OLD_TENANT">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#CaretakerContact"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#ContactPersonType"/>
         <rdfs:label xml:lang="de">Altmieter</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1650,7 +1860,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#PRESENT">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPass"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
         <rdfs:label xml:lang="de">vorhanden</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1819,14 +2029,12 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#Address"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#CaretakerContact"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#Condition"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#ContactPerson"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyCarrier"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyEfficiencyClass"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPass"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EquipmentCondition"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#HeatingType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#TenantGuidelines"/>
         </owl:members>
     </rdf:Description>
@@ -1834,18 +2042,14 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#ApartmentType"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#ContactPersonType"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassType"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#HeatingType"/>
+            <rdf:Description rdf:about="https://www.w3id.org/def/reo#HouseType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#MarketingType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#RealEstateType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#UsageType"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyCarrier"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyEfficiencyClass"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassType"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#HeatingType"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

@@ -1,5 +1,11 @@
 {
   "@context" : {
+    "EnergyPassPresentType" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyPassPresentType"
+    },
+    "minIncome" : {
+      "@id" : "https://www.w3id.org/def/reo#minIncome"
+    },
     "Address" : {
       "@id" : "https://www.w3id.org/def/reo#Address"
     },
@@ -49,12 +55,20 @@
       "@id" : "https://www.w3id.org/def/reo#city",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "energyPassPresentType" : {
+      "@id" : "https://www.w3id.org/def/reo#energyPassPresentType",
+      "@type" : "@id"
+    },
     "hasGarden" : {
       "@id" : "https://www.w3id.org/def/reo#hasGarden",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "PhysicalFeature" : {
       "@id" : "https://www.w3id.org/def/reo#PhysicalFeature"
+    },
+    "hasElevator" : {
+      "@id" : "https://www.w3id.org/def/reo#hasElevator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "constructionYear" : {
       "@id" : "https://www.w3id.org/def/reo#constructionYear",
@@ -81,15 +95,16 @@
     "RealEstateType" : {
       "@id" : "https://www.w3id.org/def/reo#RealEstateType"
     },
+    "notAvailable" : {
+      "@id" : "https://www.w3id.org/def/reo#notAvailable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
     "otherPet" : {
       "@id" : "https://www.w3id.org/def/reo#otherPet",
       "@type" : "@id"
     },
     "EnergyCarrier" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyCarrier"
-    },
-    "CaretakerContact" : {
-      "@id" : "https://www.w3id.org/def/reo#CaretakerContact"
     },
     "CarSpace" : {
       "@id" : "https://www.w3id.org/def/reo#CarSpace"
@@ -100,6 +115,9 @@
     "condition" : {
       "@id" : "https://www.w3id.org/def/reo#condition",
       "@type" : "@id"
+    },
+    "email" : {
+      "@id" : "https://www.w3id.org/def/reo#email"
     },
     "RealEstate" : {
       "@id" : "https://www.w3id.org/def/reo#RealEstate"
@@ -136,8 +154,19 @@
       "@id" : "https://www.w3id.org/def/reo#address",
       "@type" : "@id"
     },
+    "HouseType" : {
+      "@id" : "https://www.w3id.org/def/reo#HouseType"
+    },
+    "contactType" : {
+      "@id" : "https://www.w3id.org/def/reo#contactType",
+      "@type" : "@id"
+    },
     "EquipmentCondition" : {
       "@id" : "https://www.w3id.org/def/reo#EquipmentCondition"
+    },
+    "houseType" : {
+      "@id" : "https://www.w3id.org/def/reo#houseType",
+      "@type" : "@id"
     },
     "houseNumber" : {
       "@id" : "https://www.w3id.org/def/reo#houseNumber",
@@ -157,15 +186,28 @@
     "MarketingType" : {
       "@id" : "https://www.w3id.org/def/reo#MarketingType"
     },
+    "phoneNumber" : {
+      "@id" : "https://www.w3id.org/def/reo#phoneNumber"
+    },
     "EnergyPassType" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyPassType"
+    },
+    "ContactPersonType" : {
+      "@id" : "https://www.w3id.org/def/reo#ContactPersonType"
     },
     "TenantGuidelines" : {
       "@id" : "https://www.w3id.org/def/reo#TenantGuidelines"
     },
+    "hasGuestToilet" : {
+      "@id" : "https://www.w3id.org/def/reo#hasGuestToilet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
     "title" : {
       "@id" : "https://www.w3id.org/def/reo#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ContactPerson" : {
+      "@id" : "https://www.w3id.org/def/reo#ContactPerson"
     },
     "year" : {
       "@id" : "https://www.w3id.org/def/reo#year"
@@ -194,10 +236,6 @@
     },
     "tenantGuidelines" : {
       "@id" : "https://www.w3id.org/def/reo#tenantGuidelines",
-      "@type" : "@id"
-    },
-    "energypassType" : {
-      "@id" : "https://www.w3id.org/def/reo#energypassType",
       "@type" : "@id"
     },
     "hasCellar" : {
@@ -236,6 +274,14 @@
     "netRent" : {
       "@id" : "https://www.w3id.org/def/reo#netRent"
     },
+    "hasBalcony" : {
+      "@id" : "https://www.w3id.org/def/reo#hasBalcony",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "energyPassType" : {
+      "@id" : "https://www.w3id.org/def/reo#energyPassType",
+      "@type" : "@id"
+    },
     "EnergyEfficiencyClass" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyEfficiencyClass"
     },
@@ -247,6 +293,10 @@
     },
     "cat" : {
       "@id" : "https://www.w3id.org/def/reo#cat",
+      "@type" : "@id"
+    },
+    "contact" : {
+      "@id" : "https://www.w3id.org/def/reo#contact",
       "@type" : "@id"
     },
     "floorCount" : {
