@@ -6,13 +6,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://www.w3id.org/def/reo> .
 
 <https://www.w3id.org/def/reo> rdf:type owl:Ontology ;
                                 dc:creator "Tim Fock" ;
-                                terms:licence <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                terms:title "Real Estate Ontology" ;
+                                dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                dcterms:title "Real Estate Ontology" ;
                                 rdfs:comment "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." ;
                                 owl:versionInfo "0.0.2" .
 
@@ -24,12 +24,16 @@
 dc:creator rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/licence
-terms:licence rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
-terms:title rdf:type owl:AnnotationProperty .
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#versionInfo
@@ -1003,7 +1007,8 @@ reo:GARAGE rdf:type owl:NamedIndividual ,
 ###  https://www.w3id.org/def/reo#GAS
 reo:GAS rdf:type owl:NamedIndividual ,
                  reo:EnergyCarrier ;
-        rdfs:label "Gas"@de .
+        rdfs:label "Gas"@de ;
+        owl:sameAs <http://de.dbpedia.org/resource/Gasheizung> .
 
 
 ###  https://www.w3id.org/def/reo#GEOTHERMICS
@@ -1045,7 +1050,8 @@ reo:HOTWATER rdf:type owl:NamedIndividual ,
 ###  https://www.w3id.org/def/reo#HOUSE
 reo:HOUSE rdf:type owl:NamedIndividual ,
                    reo:RealEstateType ;
-          rdfs:label "Haus"@de .
+          rdfs:label "Haus"@de ;
+          owl:sameAs <http://de.dbpedia.org/resource/Haus> .
 
 
 ###  https://www.w3id.org/def/reo#LIKENEW
@@ -1171,7 +1177,8 @@ reo:PELLET rdf:type owl:NamedIndividual ,
 ###  https://www.w3id.org/def/reo#PENTHOUSE
 reo:PENTHOUSE rdf:type owl:NamedIndividual ,
                        reo:ApartmentType ;
-              rdfs:label "Penthouse"@de .
+              rdfs:label "Penthouse"@de ;
+              owl:sameAs <http://de.dbpedia.org/resource/Penthouse> .
 
 
 ###  https://www.w3id.org/def/reo#PRESENT
@@ -1231,7 +1238,8 @@ reo:SIMPLE rdf:type owl:NamedIndividual ,
 ###  https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE
 reo:SINGLE_FAMILY_HOUSE rdf:type owl:NamedIndividual ,
                                  reo:HouseType ;
-                        rdfs:label "Einfamilienhaus"@de .
+                        rdfs:label "Einfamilienhaus"@de ;
+                        owl:sameAs <http://de.dbpedia.org/resource/Einfamilienhaus> .
 
 
 ###  https://www.w3id.org/def/reo#SOLAR
