@@ -28,6 +28,9 @@
       "@id" : "https://www.w3id.org/def/reo#dog",
       "@type" : "@id"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "modernizationYear" : {
       "@id" : "https://www.w3id.org/def/reo#modernizationYear",
       "@type" : "http://www.w3.org/2001/XMLSchema#int"
@@ -220,9 +223,6 @@
       "@id" : "https://www.w3id.org/def/reo#heatingType",
       "@type" : "@id"
     },
-    "licence" : {
-      "@id" : "http://purl.org/dc/terms/licence"
-    },
     "AbstractFeature" : {
       "@id" : "https://www.w3id.org/def/reo#AbstractFeature"
     },
@@ -267,6 +267,9 @@
     "hasWashingMachineConnection" : {
       "@id" : "https://www.w3id.org/def/reo#hasWashingMachineConnection",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"

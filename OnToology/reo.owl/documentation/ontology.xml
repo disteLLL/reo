@@ -10,7 +10,7 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://www.w3id.org/def/reo">
         <dc:creator>Tim Fock</dc:creator>
-        <terms:licence rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
         <terms:title>Real Estate Ontology</terms:title>
         <rdfs:comment>This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass).</rdfs:comment>
         <owl:versionInfo>0.0.2</owl:versionInfo>
@@ -37,10 +37,10 @@
     
 
 
-    <!-- http://purl.org/dc/terms/licence -->
+    <!-- http://purl.org/dc/terms/license -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/licence"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -48,6 +48,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
     
 
 
@@ -1225,6 +1232,42 @@
      -->
 
 
+    
+
+
+    <!-- http://de.dbpedia.org/resource/Einfamilienhaus -->
+
+
+    <owl:NamedIndividual rdf:about="http://de.dbpedia.org/resource/Einfamilienhaus">
+        <owl:sameAs rdf:resource="https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://de.dbpedia.org/resource/Gasheizung -->
+
+
+    <owl:NamedIndividual rdf:about="http://de.dbpedia.org/resource/Gasheizung">
+        <owl:sameAs rdf:resource="https://www.w3id.org/def/reo#GAS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://de.dbpedia.org/resource/Haus -->
+
+
+    <owl:NamedIndividual rdf:about="http://de.dbpedia.org/resource/Haus">
+        <owl:sameAs rdf:resource="https://www.w3id.org/def/reo#HOUSE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://de.dbpedia.org/resource/Penthouse -->
+
+
+    <owl:NamedIndividual rdf:about="http://de.dbpedia.org/resource/Penthouse">
+        <owl:sameAs rdf:resource="https://www.w3id.org/def/reo#PENTHOUSE"/>
+    </owl:NamedIndividual>
     
 
 

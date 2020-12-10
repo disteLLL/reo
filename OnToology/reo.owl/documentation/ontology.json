@@ -637,13 +637,40 @@
     "@id" : "https://www.w3id.org/def/reo#phoneNumber"
   } ]
 }, {
+  "@id" : "http://de.dbpedia.org/resource/Einfamilienhaus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE"
+  } ]
+}, {
+  "@id" : "http://de.dbpedia.org/resource/Gasheizung",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.w3id.org/def/reo#GAS"
+  } ]
+}, {
+  "@id" : "http://de.dbpedia.org/resource/Haus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.w3id.org/def/reo#HOUSE"
+  } ]
+}, {
+  "@id" : "http://de.dbpedia.org/resource/Penthouse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "https://www.w3id.org/def/reo#PENTHOUSE"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/licence",
+  "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#sameAs",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
@@ -654,8 +681,8 @@
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Tim Fock"
   } ],
-  "http://purl.org/dc/terms/licence" : [ {
-    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Real Estate Ontology"
