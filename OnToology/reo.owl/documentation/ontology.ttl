@@ -8,7 +8,7 @@
 
 <https://www.w3id.org/def/reo> rdf:type owl:Ontology ;
                                 <http://purl.org/dc/elements/1.1/creator> "Tim Fock" ;
-                                <http://purl.org/dc/terms/licence> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                 <http://purl.org/dc/terms/title> "Real Estate Ontology" ;
                                 rdfs:comment "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." ;
                                 owl:versionInfo "0.0.2" .
@@ -21,12 +21,16 @@
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/licence
-<http://purl.org/dc/terms/licence> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2002/07/owl#versionInfo
@@ -756,6 +760,26 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://de.dbpedia.org/resource/Einfamilienhaus
+<http://de.dbpedia.org/resource/Einfamilienhaus> rdf:type owl:NamedIndividual ;
+                                                 owl:sameAs :SINGLE_FAMILY_HOUSE .
+
+
+###  http://de.dbpedia.org/resource/Gasheizung
+<http://de.dbpedia.org/resource/Gasheizung> rdf:type owl:NamedIndividual ;
+                                            owl:sameAs :GAS .
+
+
+###  http://de.dbpedia.org/resource/Haus
+<http://de.dbpedia.org/resource/Haus> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs :HOUSE .
+
+
+###  http://de.dbpedia.org/resource/Penthouse
+<http://de.dbpedia.org/resource/Penthouse> rdf:type owl:NamedIndividual ;
+                                           owl:sameAs :PENTHOUSE .
+
 
 ###  https://www.w3id.org/def/reo#A
 :A rdf:type owl:NamedIndividual ,

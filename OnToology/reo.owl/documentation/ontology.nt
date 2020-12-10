@@ -1,6 +1,6 @@
 <https://www.w3id.org/def/reo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://www.w3id.org/def/reo> <http://purl.org/dc/elements/1.1/creator> "Tim Fock" .
-<https://www.w3id.org/def/reo> <http://purl.org/dc/terms/licence> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://www.w3id.org/def/reo> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
 <https://www.w3id.org/def/reo> <http://purl.org/dc/terms/title> "Real Estate Ontology" .
 <https://www.w3id.org/def/reo> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." .
 <https://www.w3id.org/def/reo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
@@ -16,11 +16,14 @@
 # http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/dc/terms/licence
-<http://purl.org/dc/terms/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2002/07/owl#versionInfo
 <http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -694,6 +697,22 @@ _:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # #
 # #################################################################
 # 
+# 
+# http://de.dbpedia.org/resource/Einfamilienhaus
+<http://de.dbpedia.org/resource/Einfamilienhaus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://de.dbpedia.org/resource/Einfamilienhaus> <http://www.w3.org/2002/07/owl#sameAs> <https://www.w3id.org/def/reo#SINGLE_FAMILY_HOUSE> .
+# 
+# http://de.dbpedia.org/resource/Gasheizung
+<http://de.dbpedia.org/resource/Gasheizung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://de.dbpedia.org/resource/Gasheizung> <http://www.w3.org/2002/07/owl#sameAs> <https://www.w3id.org/def/reo#GAS> .
+# 
+# http://de.dbpedia.org/resource/Haus
+<http://de.dbpedia.org/resource/Haus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://de.dbpedia.org/resource/Haus> <http://www.w3.org/2002/07/owl#sameAs> <https://www.w3id.org/def/reo#HOUSE> .
+# 
+# http://de.dbpedia.org/resource/Penthouse
+<http://de.dbpedia.org/resource/Penthouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://de.dbpedia.org/resource/Penthouse> <http://www.w3.org/2002/07/owl#sameAs> <https://www.w3id.org/def/reo#PENTHOUSE> .
 # 
 # https://www.w3id.org/def/reo#A
 <https://www.w3id.org/def/reo#A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
