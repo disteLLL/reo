@@ -2,6 +2,7 @@ prefixes:
   ex: http://example.com/
   reo: https://www.w3id.org/def/reo#
   xsd: http://www.w3.org/2001/XMLSchema#
+  schema: http://schema.org/
   
 sources:
   realEstateList:
