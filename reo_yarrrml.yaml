@@ -136,7 +136,7 @@ mappings:
       - [schema:postalCode, $(address.zipcode)]
       - [schema:addressLocality, $(address.city)]
       - [schema:addressCountry, $(address.countryCode)]
-	  
+      
   schemaRealEstateListing:
     sources: realEstateList
     s: ex:$(publicId)_schemaRealEstateListing
@@ -144,4 +144,4 @@ mappings:
       - [a, [schema:RealEstateListing, schema:Offer]]
       - [schema:price $(costs.rentNet.amount)]
       - [schema:price $(costs.buyCost.amount)]
-	  
+      
