@@ -142,6 +142,6 @@ mappings:
     s: ex:$(publicId)_schemaRealEstateListing
     po:
       - [a, [schema:RealEstateListing, schema:Offer]]
-      - [schema:price $(costs.rentNet.amount)]
-      - [schema:price $(costs.buyCost.amount)]
+      - [schema:price, $(costs.rentNet.amount)]
+      - [schema:price, $(costs.buyCost.amount)]
       
