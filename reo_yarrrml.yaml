@@ -14,17 +14,17 @@ mappings:
     sources: realEstateList
     s: ex:$(publicId)
     po:
-      - [a, reo:RealEstate]
-      - [reo:title, $(title)]
+      - [a, [schema:Accomodation, reo:RealEstate]]
+      - [[schema:name, reo:title], $(title)]
       - [reo:marketingType, reo:$(disposalType)~iri]
       - [reo:realEstateType, reo:$(type)~iri]
       - [reo:apartmentType, reo:$(apartmentType)~iri]
       - [reo:houseType, reo:$(houseType)~iri]
       - [reo:usageType, reo:$(usageType)~iri]
       - [reo:livingSpace, $(allocation.livingSpace), xsd:float]
-      - [reo:numberOfRooms, $(allocation.rooms), xsd:int]
-      - [reo:numberOfBedrooms, $(allocation.bedroomCount), xsd:int]
-      - [reo:numberOfBathrooms, $(allocation.bathroomCount), xsd:int]
+      - [[schema:numberOfRooms, reo:numberOfRooms], $(allocation.rooms), xsd:int]
+      - [[schema:numberOfBedrooms, reo:numberOfBedrooms], $(allocation.bedroomCount), xsd:int]
+      - [[schema:numberOfBathroomsTotal, reo:numberOfBathrooms], $(allocation.bathroomCount), xsd:int]
       - [reo:floor, $(allocation.floor), xsd:int]
       - [reo:floorCount, $(allocation.floorCount), xsd:int]
       - [reo:hasGarden, $(allocation.garden), xsd:boolean]
@@ -38,7 +38,7 @@ mappings:
       - [reo:carspaceCost, $(costs.carspaceCosts.amount), xsd:float]
       - [reo:purchasePrice, $(costs.buyCost.amount), xsd:float]
       - [reo:heatingCost, $(costs.heatingCost.amount), xsd:float]
-      - [reo:constructionYear, $(stats.buildYear), xsd:int]
+      - [[schema:yearBuilt, reo:constructionYear], $(stats.buildYear), xsd:int]
       - [reo:modernizationYear, $(stats.modernizationYear), xsd:int]
       - [reo:condition, reo:$(conditions.condition)~iri]
       - [reo:equipmentCondition, reo:$(conditions.equipmentCondition)~iri]
@@ -50,6 +50,9 @@ mappings:
       - [reo:smoking, reo:$(tenantPreferences.smoking)~iri]
       - [reo:maxHouseholdPersons, $(tenantPreferences.maxHouseholdPersons), xsd:int]
       - [reo:minIncome, $(tenantPreferences.minIncome.amount), xsd:float]
+	  - [schema:petsAllowed, reo:$(tenantPreferences.petAllowed)]
+	  - [schema:accommodationCategory, reo:$(apartmentType)]
+	  - [schema:accommodationCategory, reo:$(houseType)]
       - p: reo:address
         o:
           mapping: address
@@ -74,6 +77,22 @@ mappings:
             parameters:
               - [str1, $(publicId)]
               - [str2, $(publicId)]
+	  - p: schema:address
+        o:
+          mapping: schemaAddress
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(publicId)]
+              - [str2, $(publicId)]
+	  - p: schema:additionalType
+        o:
+          mapping: schemaRealEstateListing
+          condition:
+            function: equal
+            parameters:
+              - [str1, $(publicId)]
+              - [str2, $(publicId)]
   
   address:
     sources: realEstateList
@@ -90,11 +109,11 @@ mappings:
     sources: realEstateList
     s: ex:$(publicId)_contactPerson
     po:
-      - [a, reo:ContactPerson]
+      - [a, [schema:RealEstateAgent,reo:ContactPerson]]
       - [reo:contactType, reo:$(caretakerContact.title)~iri]
       - [reo:notAvailable, $(caretakerContact.notAvailable), xsd:boolean]
-      - [reo:email, $(caretakerContact.email)]
-      - [reo:phoneNumber, $(caretakerContact.phoneNumber)]
+      - [[schema:email, reo:email], $(caretakerContact.email)]
+      - [[schema:telephone, reo:phoneNumber], $(caretakerContact.phoneNumber)]
       
   energyPass:
     sources: realEstateList
@@ -106,3 +125,22 @@ mappings:
       - [reo:energyCarrier, reo:$(energyPass.energyCarrier)~iri]
       - [reo:heatingType, reo:$(energyPass.heatingType)~iri]
       - [reo:energyEfficiencyClass, reo:$(energyPass.energyEfficiencyCategory)~iri]
+
+  schemaAddress:
+    sources: realEstateList
+    s: ex:$(publicId)_schemaAddress
+	po:
+	  - [a, schema:PostalAddress]
+      - [schema:streetAddress, $(address.street) $(address.streetNumber)]
+      - [schema:postalCode, $(address.zipcode)]
+      - [schema:addressLocality, $(address.city)]
+      - [schema:addressCountry, $(address.countryCode)]
+	  
+  schemaRealEstateListing:
+    sources: realEstateList
+    s: ex:$(publicId)_schemaRealEstateListing
+	po:
+	  - [a, [schema:RealEstateListing, schema:Offer]]
+	  - [schema:price $(costs.rentNet.amount)]
+	  - [schema:price $(costs.buyCost.amount)]
+	  
