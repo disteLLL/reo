@@ -1,0 +1,775 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:shacl="http://www.w3.org/ns/shacl#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#class -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#class"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#datatype -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#datatype"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#maxCount -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#maxCount"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#minCount -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#minCount"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#nodeKind -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#nodeKind"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#or -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#or"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#path -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#path"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#property -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#targetClass -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#targetClass"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#NodeShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#NodeShape"/>
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/validation_shape#Address -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#Address">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#city"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#countryCode"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#houseNumber"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#street"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#zipCode"/>
+        <shacl:targetClass rdf:resource="https://www.w3id.org/def/reo#Address"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#ContactPerson -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#ContactPerson">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#contactType"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#email"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#notAvailable"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#phoneNumber"/>
+        <shacl:targetClass rdf:resource="https://www.w3id.org/def/reo#ContactPerson"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#EnergyPass -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#EnergyPass">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#energyCarrier"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#energyEfficiencyClass"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#energyPassPresentType"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#energyPassType"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#heatingType"/>
+        <shacl:targetClass rdf:resource="https://www.w3id.org/def/reo#EnergyPass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#RealEstate -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#RealEstate">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:or>
+            <rdf:Description/>
+        </shacl:or>
+        <shacl:property rdf:resource="http://example.com/validation_shape#additionalCost"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#address"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#bail"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#carspaceCost"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#constructionYear"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#contact"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#energyPass"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#floor"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#floorCount"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasBalcony"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasCellar"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasElevator"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasFittedKitchen"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasGarden"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasGuestToilet"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#hasWashingMachineConnection"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#heatingCost"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#livingSpace"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#marketingType"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#maxHouseholdPersons"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#minIncome"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#modernizationYear"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#realEstateType"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#tenantGuidelines"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#title"/>
+        <shacl:property rdf:resource="http://example.com/validation_shape#usageType"/>
+        <shacl:targetClass rdf:resource="https://www.w3id.org/def/reo#RealEstate"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#additionalCost -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#additionalCost">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#additionalCost"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#address -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#address">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#Address"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#address"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#bail -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#bail">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#bail"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#carspaceCost -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#carspaceCost">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#carspaceCost"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#city -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#city">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#city"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#constructionYear -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#constructionYear">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#constructionYear"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#contact -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#contact">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#ContactPerson"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#contact"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#contactType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#contactType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#ContactPersonType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#contactType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#countryCode -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#countryCode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#countryCode"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#email -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#email">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#email"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#energyCarrier -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#energyCarrier">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#EnergyCarrier"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#energyCarrier"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#energyEfficiencyClass -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#energyEfficiencyClass">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#EnergyEfficiencyClass"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#energyEfficiencyClass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#energyPass -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#energyPass">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#EnergyPass"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#energyPass"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#energyPassPresentType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#energyPassPresentType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#energyPassPresentType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#energyPassType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#energyPassType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#EnergyPassType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#energyPassType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#floor -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#floor">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#floor"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#floorCount -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#floorCount">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#floorCount"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasBalcony -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasBalcony">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasBalcony"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasCellar -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasCellar">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasCellar"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasElevator -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasElevator">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasElevator"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasFittedKitchen -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasFittedKitchen">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasFittedKitchen"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasGarden -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasGarden">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasGarden"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasGuestToilet -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasGuestToilet">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasGuestToilet"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#hasWashingMachineConnection -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#hasWashingMachineConnection">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#hasWashingMachineConnection"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#heatingCost -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#heatingCost">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#heatingCost"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#heatingType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#heatingType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#heatingType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#houseNumber -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#houseNumber">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#houseNumber"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#livingSpace -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#livingSpace">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#livingSpace"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#marketingType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#marketingType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#MarketingType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#marketingType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#maxHouseholdPersons -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#maxHouseholdPersons">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#maxHouseholdPersons"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#minIncome -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#minIncome">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#minIncome"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#modernizationYear -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#modernizationYear">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#modernizationYear"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#notAvailable -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#notAvailable">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#notAvailable"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#phoneNumber -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#phoneNumber">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#phoneNumber"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#realEstateType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#realEstateType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#RealEstateType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#realEstateType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#street -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#street">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#street"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#tenantGuidelines -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#tenantGuidelines">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#TenantGuidelines"/>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#tenantGuidelines"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#title -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#title">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#title"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#usageType -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#usageType">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#UsageType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#usageType"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://example.com/validation_shape#zipCode -->
+
+
+    <NamedIndividual rdf:about="http://example.com/validation_shape#zipCode">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#zipCode"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="genid4">
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#ApartmentType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#apartmentType"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid5">
+        <shacl:class rdf:resource="https://www.w3id.org/def/reo#HouseType"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#IRI"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#houseType"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid6">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#netRent"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <shacl:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:maxCount>
+        <shacl:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</shacl:minCount>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="https://www.w3id.org/def/reo#purchasePrice"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,37 @@
+{
+  "@context" : {
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/shacl#or"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property"
+    },
+    "NodeShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype"
+    },
+    "PropertyShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+    }
+  }
+}

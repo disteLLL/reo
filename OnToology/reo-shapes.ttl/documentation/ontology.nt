@@ -1,0 +1,475 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#maxCount
+<http://www.w3.org/ns/shacl#maxCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#minCount
+<http://www.w3.org/ns/shacl#minCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#or
+<http://www.w3.org/ns/shacl#or> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://example.com/validation_shape#Address
+<http://example.com/validation_shape#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#city> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#countryCode> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#houseNumber> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#street> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#zipCode> .
+<http://example.com/validation_shape#Address> <http://www.w3.org/ns/shacl#targetClass> <https://www.w3id.org/def/reo#Address> .
+# 
+# http://example.com/validation_shape#ContactPerson
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#contactType> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#email> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#notAvailable> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#phoneNumber> .
+<http://example.com/validation_shape#ContactPerson> <http://www.w3.org/ns/shacl#targetClass> <https://www.w3id.org/def/reo#ContactPerson> .
+# 
+# http://example.com/validation_shape#EnergyPass
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#energyCarrier> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#energyEfficiencyClass> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#energyPassPresentType> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#energyPassType> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#heatingType> .
+<http://example.com/validation_shape#EnergyPass> <http://www.w3.org/ns/shacl#targetClass> <https://www.w3id.org/def/reo#EnergyPass> .
+# 
+# http://example.com/validation_shape#RealEstate
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#NodeShape> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#or> _:genid2 .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#or> _:genid3 .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#additionalCost> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#address> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#bail> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#carspaceCost> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#constructionYear> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#contact> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#energyPass> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#floor> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#floorCount> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasBalcony> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasCellar> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasElevator> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasFittedKitchen> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasGarden> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasGuestToilet> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#hasWashingMachineConnection> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#heatingCost> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#livingSpace> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#marketingType> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#maxHouseholdPersons> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#minIncome> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#modernizationYear> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#realEstateType> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#tenantGuidelines> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#title> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#property> <http://example.com/validation_shape#usageType> .
+<http://example.com/validation_shape#RealEstate> <http://www.w3.org/ns/shacl#targetClass> <https://www.w3id.org/def/reo#RealEstate> .
+# 
+# http://example.com/validation_shape#additionalCost
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#additionalCost> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#additionalCost> .
+# 
+# http://example.com/validation_shape#address
+<http://example.com/validation_shape#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#address> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#Address> .
+<http://example.com/validation_shape#address> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#address> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#address> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#address> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#address> .
+# 
+# http://example.com/validation_shape#bail
+<http://example.com/validation_shape#bail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#bail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#bail> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#bail> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#bail> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#bail> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#bail> .
+# 
+# http://example.com/validation_shape#carspaceCost
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#carspaceCost> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#carspaceCost> .
+# 
+# http://example.com/validation_shape#city
+<http://example.com/validation_shape#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#city> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#city> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#city> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#city> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#city> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#city> .
+# 
+# http://example.com/validation_shape#constructionYear
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#constructionYear> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#constructionYear> .
+# 
+# http://example.com/validation_shape#contact
+<http://example.com/validation_shape#contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#contact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#contact> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#ContactPerson> .
+<http://example.com/validation_shape#contact> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#contact> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#contact> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#contact> .
+# 
+# http://example.com/validation_shape#contactType
+<http://example.com/validation_shape#contactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#contactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#contactType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#ContactPersonType> .
+<http://example.com/validation_shape#contactType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#contactType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#contactType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#contactType> .
+# 
+# http://example.com/validation_shape#countryCode
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#countryCode> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#countryCode> .
+# 
+# http://example.com/validation_shape#email
+<http://example.com/validation_shape#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#email> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#email> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#email> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#email> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#email> .
+# 
+# http://example.com/validation_shape#energyCarrier
+<http://example.com/validation_shape#energyCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#energyCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#energyCarrier> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#EnergyCarrier> .
+<http://example.com/validation_shape#energyCarrier> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#energyCarrier> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#energyCarrier> .
+# 
+# http://example.com/validation_shape#energyEfficiencyClass
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#EnergyEfficiencyClass> .
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#energyEfficiencyClass> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#energyEfficiencyClass> .
+# 
+# http://example.com/validation_shape#energyPass
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#EnergyPass> .
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#energyPass> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#energyPass> .
+# 
+# http://example.com/validation_shape#energyPassPresentType
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#EnergyPassPresentType> .
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#energyPassPresentType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#energyPassPresentType> .
+# 
+# http://example.com/validation_shape#energyPassType
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#EnergyPassType> .
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#energyPassType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#energyPassType> .
+# 
+# http://example.com/validation_shape#floor
+<http://example.com/validation_shape#floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#floor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#floor> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#floor> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#floor> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#floor> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#floor> .
+# 
+# http://example.com/validation_shape#floorCount
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#floorCount> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#floorCount> .
+# 
+# http://example.com/validation_shape#hasBalcony
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasBalcony> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasBalcony> .
+# 
+# http://example.com/validation_shape#hasCellar
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasCellar> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasCellar> .
+# 
+# http://example.com/validation_shape#hasElevator
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasElevator> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasElevator> .
+# 
+# http://example.com/validation_shape#hasFittedKitchen
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasFittedKitchen> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasFittedKitchen> .
+# 
+# http://example.com/validation_shape#hasGarden
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasGarden> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasGarden> .
+# 
+# http://example.com/validation_shape#hasGuestToilet
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasGuestToilet> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasGuestToilet> .
+# 
+# http://example.com/validation_shape#hasWashingMachineConnection
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#hasWashingMachineConnection> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#hasWashingMachineConnection> .
+# 
+# http://example.com/validation_shape#heatingCost
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#heatingCost> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#heatingCost> .
+# 
+# http://example.com/validation_shape#heatingType
+<http://example.com/validation_shape#heatingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#heatingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#heatingType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#HeatingType> .
+<http://example.com/validation_shape#heatingType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#heatingType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#heatingType> .
+# 
+# http://example.com/validation_shape#houseNumber
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#houseNumber> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#houseNumber> .
+# 
+# http://example.com/validation_shape#livingSpace
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#livingSpace> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#livingSpace> .
+# 
+# http://example.com/validation_shape#marketingType
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#MarketingType> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#marketingType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#marketingType> .
+# 
+# http://example.com/validation_shape#maxHouseholdPersons
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#maxHouseholdPersons> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#maxHouseholdPersons> .
+# 
+# http://example.com/validation_shape#minIncome
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#minIncome> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#minIncome> .
+# 
+# http://example.com/validation_shape#modernizationYear
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#modernizationYear> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#modernizationYear> .
+# 
+# http://example.com/validation_shape#notAvailable
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#notAvailable> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#notAvailable> .
+# 
+# http://example.com/validation_shape#phoneNumber
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#phoneNumber> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#phoneNumber> .
+# 
+# http://example.com/validation_shape#realEstateType
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#RealEstateType> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#realEstateType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#realEstateType> .
+# 
+# http://example.com/validation_shape#street
+<http://example.com/validation_shape#street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#street> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#street> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#street> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#street> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#street> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#street> .
+# 
+# http://example.com/validation_shape#tenantGuidelines
+<http://example.com/validation_shape#tenantGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#tenantGuidelines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#tenantGuidelines> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#TenantGuidelines> .
+<http://example.com/validation_shape#tenantGuidelines> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#tenantGuidelines> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#tenantGuidelines> .
+# 
+# http://example.com/validation_shape#title
+<http://example.com/validation_shape#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#title> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/validation_shape#title> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#title> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#title> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#title> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#title> .
+# 
+# http://example.com/validation_shape#usageType
+<http://example.com/validation_shape#usageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#UsageType> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+<http://example.com/validation_shape#usageType> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#usageType> .
+# 
+# http://example.com/validation_shape#zipCode
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<http://example.com/validation_shape#zipCode> <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#zipCode> .
+# 
+_:genid4 <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#ApartmentType> .
+_:genid4 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:genid4 <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#apartmentType> .
+_:genid5 <http://www.w3.org/ns/shacl#class> <https://www.w3id.org/def/reo#HouseType> .
+_:genid5 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> .
+_:genid5 <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#houseType> .
+_:genid6 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid6 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:genid6 <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#netRent> .
+_:genid7 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid7 <http://www.w3.org/ns/shacl#maxCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/ns/shacl#minCount> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+_:genid7 <http://www.w3.org/ns/shacl#path> <https://www.w3id.org/def/reo#purchasePrice> .
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
