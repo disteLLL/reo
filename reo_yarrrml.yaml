@@ -23,7 +23,7 @@ mappings:
       - [reo:houseType, reo:$(houseType)~iri]
       - [reo:usageType, reo:$(usageType)~iri]
       - [[schema:floorSize, reo:livingSpace], $(allocation.livingSpace), xsd:float]
-      - [[schema:numberOfRooms, reo:numberOfRooms], $(allocation.rooms), xsd:int]
+      - [[schema:numberOfRooms, reo:numberOfRooms], $(allocation.rooms), xsd:float]
       - [[schema:numberOfBedrooms, reo:numberOfBedrooms], $(allocation.bedroomCount), xsd:int]
       - [[schema:numberOfBathroomsTotal, reo:numberOfBathrooms], $(allocation.bathroomCount), xsd:int]
       - [reo:floor, $(allocation.floor), xsd:int]
