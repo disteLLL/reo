@@ -730,6 +730,26 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                               owl:onProperty :modernizationYear ;
                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onDataRange xsd:int
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :numberOfBathrooms ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :numberOfBedrooms ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :numberOfCarSpaces ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:int
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :numberOfRooms ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:float
                             ] ;
             rdfs:label "Immobilie"@de .
 
