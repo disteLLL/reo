@@ -1,0 +1,318 @@
+{
+  "@context" : {
+    "EnergyPassPresentType" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyPassPresentType"
+    },
+    "minIncome" : {
+      "@id" : "https://www.w3id.org/def/reo#minIncome"
+    },
+    "Address" : {
+      "@id" : "https://www.w3id.org/def/reo#Address"
+    },
+    "floor" : {
+      "@id" : "https://www.w3id.org/def/reo#floor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "countryCode" : {
+      "@id" : "https://www.w3id.org/def/reo#countryCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "maxHouseholdPersons" : {
+      "@id" : "https://www.w3id.org/def/reo#maxHouseholdPersons",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "dog" : {
+      "@id" : "https://www.w3id.org/def/reo#dog",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "modernizationYear" : {
+      "@id" : "https://www.w3id.org/def/reo#modernizationYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "UsageType" : {
+      "@id" : "https://www.w3id.org/def/reo#UsageType"
+    },
+    "Type" : {
+      "@id" : "https://www.w3id.org/def/reo#Type"
+    },
+    "additionalCost" : {
+      "@id" : "https://www.w3id.org/def/reo#additionalCost"
+    },
+    "numberOfBathrooms" : {
+      "@id" : "https://www.w3id.org/def/reo#numberOfBathrooms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "numberOf" : {
+      "@id" : "https://www.w3id.org/def/reo#numberOf"
+    },
+    "city" : {
+      "@id" : "https://www.w3id.org/def/reo#city",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "energyPassPresentType" : {
+      "@id" : "https://www.w3id.org/def/reo#energyPassPresentType",
+      "@type" : "@id"
+    },
+    "hasGarden" : {
+      "@id" : "https://www.w3id.org/def/reo#hasGarden",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "PhysicalFeature" : {
+      "@id" : "https://www.w3id.org/def/reo#PhysicalFeature"
+    },
+    "hasElevator" : {
+      "@id" : "https://www.w3id.org/def/reo#hasElevator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "constructionYear" : {
+      "@id" : "https://www.w3id.org/def/reo#constructionYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "smoking" : {
+      "@id" : "https://www.w3id.org/def/reo#smoking",
+      "@type" : "@id"
+    },
+    "numberOfBedrooms" : {
+      "@id" : "https://www.w3id.org/def/reo#numberOfBedrooms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "equipmentCondition" : {
+      "@id" : "https://www.w3id.org/def/reo#equipmentCondition",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "https://www.w3id.org/def/reo#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "RealEstateType" : {
+      "@id" : "https://www.w3id.org/def/reo#RealEstateType"
+    },
+    "notAvailable" : {
+      "@id" : "https://www.w3id.org/def/reo#notAvailable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "otherPet" : {
+      "@id" : "https://www.w3id.org/def/reo#otherPet",
+      "@type" : "@id"
+    },
+    "EnergyCarrier" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyCarrier"
+    },
+    "CarSpace" : {
+      "@id" : "https://www.w3id.org/def/reo#CarSpace"
+    },
+    "purchasePrice" : {
+      "@id" : "https://www.w3id.org/def/reo#purchasePrice"
+    },
+    "condition" : {
+      "@id" : "https://www.w3id.org/def/reo#condition",
+      "@type" : "@id"
+    },
+    "email" : {
+      "@id" : "https://www.w3id.org/def/reo#email"
+    },
+    "RealEstate" : {
+      "@id" : "https://www.w3id.org/def/reo#RealEstate"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "cost" : {
+      "@id" : "https://www.w3id.org/def/reo#cost"
+    },
+    "marketingType" : {
+      "@id" : "https://www.w3id.org/def/reo#marketingType",
+      "@type" : "@id"
+    },
+    "numberOfRooms" : {
+      "@id" : "https://www.w3id.org/def/reo#numberOfRooms",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "bail" : {
+      "@id" : "https://www.w3id.org/def/reo#bail"
+    },
+    "ApartmentType" : {
+      "@id" : "https://www.w3id.org/def/reo#ApartmentType"
+    },
+    "energyPass" : {
+      "@id" : "https://www.w3id.org/def/reo#energyPass",
+      "@type" : "@id"
+    },
+    "apartmentType" : {
+      "@id" : "https://www.w3id.org/def/reo#apartmentType",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "https://www.w3id.org/def/reo#address",
+      "@type" : "@id"
+    },
+    "HouseType" : {
+      "@id" : "https://www.w3id.org/def/reo#HouseType"
+    },
+    "contactType" : {
+      "@id" : "https://www.w3id.org/def/reo#contactType",
+      "@type" : "@id"
+    },
+    "EquipmentCondition" : {
+      "@id" : "https://www.w3id.org/def/reo#EquipmentCondition"
+    },
+    "houseType" : {
+      "@id" : "https://www.w3id.org/def/reo#houseType",
+      "@type" : "@id"
+    },
+    "houseNumber" : {
+      "@id" : "https://www.w3id.org/def/reo#houseNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "energyEfficiencyClass" : {
+      "@id" : "https://www.w3id.org/def/reo#energyEfficiencyClass",
+      "@type" : "@id"
+    },
+    "heatingCost" : {
+      "@id" : "https://www.w3id.org/def/reo#heatingCost"
+    },
+    "hasFittedKitchen" : {
+      "@id" : "https://www.w3id.org/def/reo#hasFittedKitchen",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "MarketingType" : {
+      "@id" : "https://www.w3id.org/def/reo#MarketingType"
+    },
+    "phoneNumber" : {
+      "@id" : "https://www.w3id.org/def/reo#phoneNumber"
+    },
+    "EnergyPassType" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyPassType"
+    },
+    "ContactPersonType" : {
+      "@id" : "https://www.w3id.org/def/reo#ContactPersonType"
+    },
+    "TenantGuidelines" : {
+      "@id" : "https://www.w3id.org/def/reo#TenantGuidelines"
+    },
+    "hasGuestToilet" : {
+      "@id" : "https://www.w3id.org/def/reo#hasGuestToilet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "title" : {
+      "@id" : "https://www.w3id.org/def/reo#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ContactPerson" : {
+      "@id" : "https://www.w3id.org/def/reo#ContactPerson"
+    },
+    "year" : {
+      "@id" : "https://www.w3id.org/def/reo#year"
+    },
+    "usageType" : {
+      "@id" : "https://www.w3id.org/def/reo#usageType",
+      "@type" : "@id"
+    },
+    "heatingType" : {
+      "@id" : "https://www.w3id.org/def/reo#heatingType",
+      "@type" : "@id"
+    },
+    "AbstractFeature" : {
+      "@id" : "https://www.w3id.org/def/reo#AbstractFeature"
+    },
+    "zipCode" : {
+      "@id" : "https://www.w3id.org/def/reo#zipCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "realEstateType" : {
+      "@id" : "https://www.w3id.org/def/reo#realEstateType",
+      "@type" : "@id"
+    },
+    "tenantGuidelines" : {
+      "@id" : "https://www.w3id.org/def/reo#tenantGuidelines",
+      "@type" : "@id"
+    },
+    "hasCellar" : {
+      "@id" : "https://www.w3id.org/def/reo#hasCellar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "numberOfCarSpaces" : {
+      "@id" : "https://www.w3id.org/def/reo#numberOfCarSpaces",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "carspaceCost" : {
+      "@id" : "https://www.w3id.org/def/reo#carspaceCost"
+    },
+    "energyCarrier" : {
+      "@id" : "https://www.w3id.org/def/reo#energyCarrier",
+      "@type" : "@id"
+    },
+    "Condition" : {
+      "@id" : "https://www.w3id.org/def/reo#Condition"
+    },
+    "commercialUse" : {
+      "@id" : "https://www.w3id.org/def/reo#commercialUse",
+      "@type" : "@id"
+    },
+    "street" : {
+      "@id" : "https://www.w3id.org/def/reo#street",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasWashingMachineConnection" : {
+      "@id" : "https://www.w3id.org/def/reo#hasWashingMachineConnection",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2002/07/owl#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "netRent" : {
+      "@id" : "https://www.w3id.org/def/reo#netRent"
+    },
+    "hasBalcony" : {
+      "@id" : "https://www.w3id.org/def/reo#hasBalcony",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "energyPassType" : {
+      "@id" : "https://www.w3id.org/def/reo#energyPassType",
+      "@type" : "@id"
+    },
+    "EnergyEfficiencyClass" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyEfficiencyClass"
+    },
+    "HeatingType" : {
+      "@id" : "https://www.w3id.org/def/reo#HeatingType"
+    },
+    "EnergyPass" : {
+      "@id" : "https://www.w3id.org/def/reo#EnergyPass"
+    },
+    "cat" : {
+      "@id" : "https://www.w3id.org/def/reo#cat",
+      "@type" : "@id"
+    },
+    "contact" : {
+      "@id" : "https://www.w3id.org/def/reo#contact",
+      "@type" : "@id"
+    },
+    "floorCount" : {
+      "@id" : "https://www.w3id.org/def/reo#floorCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "livingSpace" : {
+      "@id" : "https://www.w3id.org/def/reo#livingSpace",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "livingCommunity" : {
+      "@id" : "https://www.w3id.org/def/reo#livingCommunity",
+      "@type" : "@id"
+    }
+  }
+}
