@@ -51,7 +51,7 @@ mappings:
       - [reo:smoking, reo:$(tenantPreferences.smoking)~iri]
       - [reo:maxHouseholdPersons, $(tenantPreferences.maxHouseholdPersons), xsd:int]
       - [reo:minIncome, $(tenantPreferences.minIncome.amount), xsd:float]
-      - [schema:petsAllowed, reo:$(tenantPreferences.petAllowed)]
+      - [schema:petsAllowed, $(tenantPreferences.petAllowed)]
       - [schema:accommodationCategory, $(apartmentType)]
       - [schema:accommodationCategory, $(houseType)]
       - [schema:floorLevel, $(allocation.floor)]
