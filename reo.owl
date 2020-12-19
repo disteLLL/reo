@@ -448,6 +448,7 @@ reo:ApartmentType rdf:type owl:Class ;
 ###  https://www.w3id.org/def/reo#CarSpace
 reo:CarSpace rdf:type owl:Class ;
              rdfs:subClassOf reo:PhysicalFeature ;
+             owl:disjointWith reo:Heating ;
              rdfs:label "Stellplatz"@de .
 
 
@@ -510,7 +511,7 @@ reo:EnergyPass rdf:type owl:Class ;
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:heatingType ;
-                                 owl:someValuesFrom reo:HeatingType
+                                 owl:someValuesFrom reo:Heating
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty reo:energyEfficiencyClass ;
@@ -553,10 +554,10 @@ reo:Feature rdf:type owl:Class ;
             rdfs:label "Eigenschaft"@de .
 
 
-###  https://www.w3id.org/def/reo#HeatingType
-reo:HeatingType rdf:type owl:Class ;
-                rdfs:subClassOf reo:Type ;
-                rdfs:label "Heizungstyp"@de .
+###  https://www.w3id.org/def/reo#Heating
+reo:Heating rdf:type owl:Class ;
+            rdfs:subClassOf reo:PhysicalFeature ;
+            rdfs:label "Heizungsart"@de .
 
 
 ###  https://www.w3id.org/def/reo#HouseType
@@ -876,7 +877,7 @@ reo:CASTLE_MANOR_HOUSE rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#CENTRAL
 reo:CENTRAL rdf:type owl:NamedIndividual ,
-                     reo:HeatingType ;
+                     reo:Heating ;
             rdfs:label "Zentralheizung"@de .
 
 
@@ -930,7 +931,7 @@ reo:DERELICT rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#DISTRICT
 reo:DISTRICT rdf:type owl:NamedIndividual ,
-                      reo:HeatingType ;
+                      reo:Heating ;
              rdfs:label "Fernwärme"@de .
 
 
@@ -1239,7 +1240,7 @@ reo:SALE rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#SELF_CONTAINED
 reo:SELF_CONTAINED rdf:type owl:NamedIndividual ,
-                            reo:HeatingType ;
+                            reo:Heating ;
                    rdfs:label "Etagenheizung"@de .
 
 
@@ -1276,7 +1277,7 @@ reo:SPECIAL_REAL_ESTATE rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#STOVE
 reo:STOVE rdf:type owl:NamedIndividual ,
-                   reo:HeatingType ;
+                   reo:Heating ;
           rdfs:label "Ofenheizung"@de .
 
 
@@ -1306,7 +1307,7 @@ reo:TERRACE_HOUSE rdf:type owl:NamedIndividual ,
 
 ###  https://www.w3id.org/def/reo#UNDERFLOOR
 reo:UNDERFLOOR rdf:type owl:NamedIndividual ,
-                        reo:HeatingType ;
+                        reo:Heating ;
                rdfs:label "Fußbodenheizung"@de .
 
 
@@ -1350,7 +1351,6 @@ reo:VILLA rdf:type owl:NamedIndividual ,
                 reo:ContactPersonType
                 reo:EnergyPassPresentType
                 reo:EnergyPassType
-                reo:HeatingType
                 reo:HouseType
                 reo:MarketingType
                 reo:RealEstateType
