@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "Heating" : {
+      "@id" : "https://www.w3id.org/def/reo#Heating"
+    },
     "EnergyPassPresentType" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyPassPresentType"
     },
@@ -287,9 +290,6 @@
     },
     "EnergyEfficiencyClass" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyEfficiencyClass"
-    },
-    "HeatingType" : {
-      "@id" : "https://www.w3id.org/def/reo#HeatingType"
     },
     "EnergyPass" : {
       "@id" : "https://www.w3id.org/def/reo#EnergyPass"

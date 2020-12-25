@@ -1,6 +1,6 @@
 <h2 id="crossreference" class="list">Cross reference for Real Estate Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Real Estate Ontology.
-<div id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -35,7 +35,7 @@ This section provides details for each class and property defined by Real Estate
          <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
       </li>
       <li>
-         <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+         <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
       </li>
       <li>
          <a href="#RealEstate" title="https://www.w3id.org/def/reo#RealEstate">Immobilie</a>
@@ -236,7 +236,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#ContactPersonType" title="https://www.w3id.org/def/reo#ContactPersonType">Kontakt</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
@@ -340,7 +339,6 @@ This section provides details for each class and property defined by Real Estate
          <dd>
             <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ContactPersonType" title="https://www.w3id.org/def/reo#ContactPersonType">Kontakt</a>
             <sup class="type-c" title="class">c</sup>, <a href="#UsageType" title="https://www.w3id.org/def/reo#UsageType">Nutzungsart</a>
@@ -395,7 +393,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#UsageType" title="https://www.w3id.org/def/reo#UsageType">Nutzungsart</a>
@@ -403,17 +400,17 @@ This section provides details for each class and property defined by Real Estate
          </dd>
       </dl>
    </div>
-   <div class="entity" id="HeatingType">
-      <h3>Heizungstyp<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Heating">
+      <h3>Heizungsart<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://www.w3id.org/def/reo#HeatingType</p>
+         <strong>IRI:</strong> https://www.w3id.org/def/reo#Heating</p>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Type" title="https://www.w3id.org/def/reo#Type">Fixe Werte</a>
+            <a href="#PhysicalFeature" title="https://www.w3id.org/def/reo#PhysicalFeature">Physische Eigenschaft</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -427,15 +424,7 @@ This section provides details for each class and property defined by Real Estate
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#ApartmentType" title="https://www.w3id.org/def/reo#ApartmentType">Wohnungstyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#ContactPersonType" title="https://www.w3id.org/def/reo#ContactPersonType">Kontakt</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
-               title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#UsageType" title="https://www.w3id.org/def/reo#UsageType">Nutzungsart</a>
+            <a href="#CarSpace" title="https://www.w3id.org/def/reo#CarSpace">Stellplatz</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -484,7 +473,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#UsageType" title="https://www.w3id.org/def/reo#UsageType">Nutzungsart</a>
@@ -518,7 +506,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
@@ -553,7 +540,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
@@ -576,7 +562,8 @@ This section provides details for each class and property defined by Real Estate
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#CarSpace" title="https://www.w3id.org/def/reo#CarSpace">Stellplatz</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#CarSpace" title="https://www.w3id.org/def/reo#CarSpace">Stellplatz</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -644,6 +631,11 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#NOT_SPECIFIED" title="https://www.w3id.org/def/reo#NOT_SPECIFIED">nicht spezifiziert</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="MarketingType">
@@ -672,7 +664,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#UsageType" title="https://www.w3id.org/def/reo#UsageType">Nutzungsart</a>
@@ -705,7 +696,6 @@ This section provides details for each class and property defined by Real Estate
             <a href="#ApartmentType" title="https://www.w3id.org/def/reo#ApartmentType">Wohnungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ContactPersonType" title="https://www.w3id.org/def/reo#ContactPersonType">Kontakt</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
@@ -748,7 +738,6 @@ This section provides details for each class and property defined by Real Estate
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassPresentType"
                title="https://www.w3id.org/def/reo#EnergyPassPresentType">Vorhandensein des Energieausweises</a>
             <sup class="type-c" title="class">c</sup>, <a href="#EnergyPassType" title="https://www.w3id.org/def/reo#EnergyPassType">Energieausweistyp</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#HouseType" title="https://www.w3id.org/def/reo#HouseType">Haustyp</a>
             <sup class="type-c" title="class">c</sup>, <a href="#MarketingType" title="https://www.w3id.org/def/reo#MarketingType">Vermarktungsart</a>
             <sup class="type-c" title="class">c</sup>, <a href="#RealEstateType" title="https://www.w3id.org/def/reo#RealEstateType">Immobilientyp</a>
@@ -838,7 +827,7 @@ This section provides details for each class and property defined by Real Estate
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -1165,7 +1154,7 @@ This section provides details for each class and property defined by Real Estate
       <p>
          <strong>IRI:</strong> https://www.w3id.org/def/reo#equipmentCondition</p>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -2002,7 +1991,7 @@ This section provides details for each class and property defined by Real Estate
          </dl>
       </div>
    </div>
-</div><div id="namedindividuals">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
@@ -2800,7 +2789,7 @@ This section provides details for each class and property defined by Real Estate
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2831,7 +2820,7 @@ This section provides details for each class and property defined by Real Estate
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2876,7 +2865,7 @@ This section provides details for each class and property defined by Real Estate
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3306,7 +3295,7 @@ This section provides details for each class and property defined by Real Estate
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3715,7 +3704,7 @@ This section provides details for each class and property defined by Real Estate
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#HeatingType" title="https://www.w3id.org/def/reo#HeatingType">Heizungstyp</a>
+            <a href="#Heating" title="https://www.w3id.org/def/reo#Heating">Heizungsart</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

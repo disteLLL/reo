@@ -11,7 +11,7 @@
                                 <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                 <http://purl.org/dc/terms/title> "Real Estate Ontology" ;
                                 rdfs:comment "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." ;
-                                owl:versionInfo "0.0.2" .
+                                owl:versionInfo "0.0.3" .
 
 #################################################################
 #    Annotation properties
@@ -445,6 +445,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 ###  https://www.w3id.org/def/reo#CarSpace
 :CarSpace rdf:type owl:Class ;
           rdfs:subClassOf :PhysicalFeature ;
+          owl:disjointWith :Heating ;
           rdfs:label "Stellplatz"@de .
 
 
@@ -507,7 +508,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :heatingType ;
-                              owl:someValuesFrom :HeatingType
+                              owl:someValuesFrom :Heating
                             ] ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :energyEfficiencyClass ;
@@ -550,10 +551,10 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
          rdfs:label "Eigenschaft"@de .
 
 
-###  https://www.w3id.org/def/reo#HeatingType
-:HeatingType rdf:type owl:Class ;
-             rdfs:subClassOf :Type ;
-             rdfs:label "Heizungstyp"@de .
+###  https://www.w3id.org/def/reo#Heating
+:Heating rdf:type owl:Class ;
+         rdfs:subClassOf :PhysicalFeature ;
+         rdfs:label "Heizungsart"@de .
 
 
 ###  https://www.w3id.org/def/reo#HouseType
@@ -893,7 +894,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://www.w3id.org/def/reo#CENTRAL
 :CENTRAL rdf:type owl:NamedIndividual ,
-                  :HeatingType ;
+                  :Heating ;
          rdfs:label "Zentralheizung"@de .
 
 
@@ -947,7 +948,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://www.w3id.org/def/reo#DISTRICT
 :DISTRICT rdf:type owl:NamedIndividual ,
-                   :HeatingType ;
+                   :Heating ;
           rdfs:label "Fernwärme"@de .
 
 
@@ -1253,7 +1254,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://www.w3id.org/def/reo#SELF_CONTAINED
 :SELF_CONTAINED rdf:type owl:NamedIndividual ,
-                         :HeatingType ;
+                         :Heating ;
                 rdfs:label "Etagenheizung"@de .
 
 
@@ -1289,7 +1290,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://www.w3id.org/def/reo#STOVE
 :STOVE rdf:type owl:NamedIndividual ,
-                :HeatingType ;
+                :Heating ;
        rdfs:label "Ofenheizung"@de .
 
 
@@ -1319,7 +1320,7 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
 
 ###  https://www.w3id.org/def/reo#UNDERFLOOR
 :UNDERFLOOR rdf:type owl:NamedIndividual ,
-                     :HeatingType ;
+                     :Heating ;
             rdfs:label "Fußbodenheizung"@de .
 
 
@@ -1363,7 +1364,6 @@ owl:versionInfo rdf:type owl:AnnotationProperty .
                 :ContactPersonType
                 :EnergyPassPresentType
                 :EnergyPassType
-                :HeatingType
                 :HouseType
                 :MarketingType
                 :RealEstateType
