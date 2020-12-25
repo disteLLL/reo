@@ -3,7 +3,7 @@
 <https://www.w3id.org/def/reo> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
 <https://www.w3id.org/def/reo> <http://purl.org/dc/terms/title> "Real Estate Ontology" .
 <https://www.w3id.org/def/reo> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)." .
-<https://www.w3id.org/def/reo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
+<https://www.w3id.org/def/reo> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.3" .
 # 
 # 
 # #################################################################
@@ -389,6 +389,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XML
 # https://www.w3id.org/def/reo#CarSpace
 <https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#PhysicalFeature> .
+<https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/2002/07/owl#disjointWith> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#CarSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Stellplatz"@de .
 # 
 # https://www.w3id.org/def/reo#Condition
@@ -446,7 +447,7 @@ _:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/d
 <https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#heatingType> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/def/reo#HeatingType> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#EnergyPass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://www.w3id.org/def/reo#energyEfficiencyClass> .
@@ -483,10 +484,10 @@ _:genid14 <http://www.w3.org/2002/07/owl#onClass> <https://www.w3id.org/def/reo#
 <https://www.w3id.org/def/reo#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://www.w3id.org/def/reo#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Eigenschaft"@de .
 # 
-# https://www.w3id.org/def/reo#HeatingType
-<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#Type> .
-<https://www.w3id.org/def/reo#HeatingType> <http://www.w3.org/2000/01/rdf-schema#label> "Heizungstyp"@de .
+# https://www.w3id.org/def/reo#Heating
+<https://www.w3id.org/def/reo#Heating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3id.org/def/reo#Heating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3id.org/def/reo#PhysicalFeature> .
+<https://www.w3id.org/def/reo#Heating> <http://www.w3.org/2000/01/rdf-schema#label> "Heizungsart"@de .
 # 
 # https://www.w3id.org/def/reo#HouseType
 <https://www.w3id.org/def/reo#HouseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -811,7 +812,7 @@ _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://www.w3id.org/def/reo#CENTRAL
 <https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#CENTRAL> <http://www.w3.org/2000/01/rdf-schema#label> "Zentralheizung"@de .
 # 
 # https://www.w3id.org/def/reo#COGENERATIONUNIT
@@ -856,7 +857,7 @@ _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://www.w3id.org/def/reo#DISTRICT
 <https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#DISTRICT> <http://www.w3.org/2000/01/rdf-schema#label> "Fernwärme"@de .
 # 
 # https://www.w3id.org/def/reo#DISTRICT_HEATING
@@ -1111,7 +1112,7 @@ _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://www.w3id.org/def/reo#SELF_CONTAINED
 <https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#SELF_CONTAINED> <http://www.w3.org/2000/01/rdf-schema#label> "Etagenheizung"@de .
 # 
 # https://www.w3id.org/def/reo#SEMIDETACHED_HOUSE
@@ -1141,7 +1142,7 @@ _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://www.w3id.org/def/reo#STOVE
 <https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#STOVE> <http://www.w3.org/2000/01/rdf-schema#label> "Ofenheizung"@de .
 # 
 # https://www.w3id.org/def/reo#STREAMLINED
@@ -1166,7 +1167,7 @@ _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://www.w3id.org/def/reo#UNDERFLOOR
 <https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#HeatingType> .
+<https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3id.org/def/reo#Heating> .
 <https://www.w3id.org/def/reo#UNDERFLOOR> <http://www.w3.org/2000/01/rdf-schema#label> "Fußbodenheizung"@de .
 # 
 # https://www.w3id.org/def/reo#UNDERGROUND
@@ -1221,21 +1222,18 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.o
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid64 <http://www.w3.org/2002/07/owl#members> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#ApartmentType> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid64 <http://www.w3.org/2002/07/owl#members> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#ContactPersonType> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#ApartmentType> .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
 _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassPresentType> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#ContactPersonType> .
 _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassType> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassPresentType> .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#HeatingType> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#EnergyPassType> .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#HouseType> .
@@ -1250,16 +1248,16 @@ _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#UsageType> .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid74 <http://www.w3.org/2002/07/owl#members> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Feature> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid73 <http://www.w3.org/2002/07/owl#members> _:genid76 .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#RealEstate> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Feature> .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
 _:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Type> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#RealEstate> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://www.w3id.org/def/reo#Type> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

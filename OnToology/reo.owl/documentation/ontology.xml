@@ -13,7 +13,7 @@
         <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
         <terms:title>Real Estate Ontology</terms:title>
         <rdfs:comment>This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass).</rdfs:comment>
-        <owl:versionInfo>0.0.2</owl:versionInfo>
+        <owl:versionInfo>0.0.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -757,6 +757,7 @@
 
     <owl:Class rdf:about="https://www.w3id.org/def/reo#CarSpace">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#PhysicalFeature"/>
+        <owl:disjointWith rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Stellplatz</rdfs:label>
     </owl:Class>
     
@@ -854,7 +855,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.w3id.org/def/reo#heatingType"/>
-                <owl:someValuesFrom rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+                <owl:someValuesFrom rdf:resource="https://www.w3id.org/def/reo#Heating"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -922,12 +923,12 @@
     
 
 
-    <!-- https://www.w3id.org/def/reo#HeatingType -->
+    <!-- https://www.w3id.org/def/reo#Heating -->
 
 
-    <owl:Class rdf:about="https://www.w3id.org/def/reo#HeatingType">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#Type"/>
-        <rdfs:label xml:lang="de">Heizungstyp</rdfs:label>
+    <owl:Class rdf:about="https://www.w3id.org/def/reo#Heating">
+        <rdfs:subClassOf rdf:resource="https://www.w3id.org/def/reo#PhysicalFeature"/>
+        <rdfs:label xml:lang="de">Heizungsart</rdfs:label>
     </owl:Class>
     
 
@@ -1453,7 +1454,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#CENTRAL">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Zentralheizung</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1543,7 +1544,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#DISTRICT">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Fernwärme</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2053,7 +2054,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#SELF_CONTAINED">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Etagenheizung</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2113,7 +2114,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#STOVE">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Ofenheizung</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2163,7 +2164,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://www.w3id.org/def/reo#UNDERFLOOR">
-        <rdf:type rdf:resource="https://www.w3id.org/def/reo#HeatingType"/>
+        <rdf:type rdf:resource="https://www.w3id.org/def/reo#Heating"/>
         <rdfs:label xml:lang="de">Fußbodenheizung</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2228,7 +2229,6 @@
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#ContactPersonType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassPresentType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#EnergyPassType"/>
-            <rdf:Description rdf:about="https://www.w3id.org/def/reo#HeatingType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#HouseType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#MarketingType"/>
             <rdf:Description rdf:about="https://www.w3id.org/def/reo#RealEstateType"/>

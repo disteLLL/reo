@@ -27,7 +27,7 @@
     "@id" : "https://www.w3id.org/def/reo#heatingType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://www.w3id.org/def/reo#HeatingType"
+    "@id" : "https://www.w3id.org/def/reo#Heating"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -626,8 +626,6 @@
     }, {
       "@id" : "https://www.w3id.org/def/reo#EnergyPassType"
     }, {
-      "@id" : "https://www.w3id.org/def/reo#HeatingType"
-    }, {
       "@id" : "https://www.w3id.org/def/reo#HouseType"
     }, {
       "@id" : "https://www.w3id.org/def/reo#MarketingType"
@@ -651,7 +649,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -743,7 +741,7 @@
     "@value" : "This ontology describes real estate using a controlled vocabulary based on a dataset from a prop-tech company. It is aimed at the german market and models some concepts only valid in Germany (e.g., energy pass)."
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.2"
+    "@value" : "0.0.3"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#A",
@@ -895,7 +893,7 @@
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#CENTRAL",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HeatingType" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#Heating" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Zentralheizung"
@@ -937,6 +935,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://www.w3id.org/def/reo#PhysicalFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://www.w3id.org/def/reo#Heating"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#Condition",
@@ -1006,7 +1007,7 @@
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#DISTRICT",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HeatingType" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#Heating" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Fernwärme"
@@ -1250,14 +1251,14 @@
     "@value" : "Haus"
   } ]
 }, {
-  "@id" : "https://www.w3id.org/def/reo#HeatingType",
+  "@id" : "https://www.w3id.org/def/reo#Heating",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
-    "@value" : "Heizungstyp"
+    "@value" : "Heizungsart"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://www.w3id.org/def/reo#Type"
+    "@id" : "https://www.w3id.org/def/reo#PhysicalFeature"
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#HouseType",
@@ -1562,7 +1563,7 @@
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#SELF_CONTAINED",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HeatingType" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#Heating" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Etagenheizung"
@@ -1604,7 +1605,7 @@
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#STOVE",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HeatingType" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#Heating" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Ofenheizung"
@@ -1656,7 +1657,7 @@
   } ]
 }, {
   "@id" : "https://www.w3id.org/def/reo#UNDERFLOOR",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#HeatingType" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3id.org/def/reo#Heating" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
     "@value" : "Fußbodenheizung"
